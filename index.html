@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Картотека</title>
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="#"><span class="iconic reload_alt"></span></a></li>
+            <li class="header-menu__item"><a class="active" href="index.html">Картотека</a></li>
+            <li class="header-menu__item"><a href="surveillances.html">Визиты</a></li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div></header>
+
+<div class="form-search-wrapper">
+    <form action="" class="form-search">
+        <h3>поиск пациента</h3>
+
+        <div class="form-search__item form-search__item_last-name">
+            <label for="" class="form-search__label">Фамилия</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_first-name">
+            <label for="" class="form-search__label">Имя</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_middle-name">
+            <label for="" class="form-search__label">Отчество</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_born">
+            <label for="" class="form-search__label">Дата рождения</label>
+            <select name="" id="" class="form-search__item_day">
+                <option value="..."></option>
+                <option value="">13</option>
+            </select> <select name="" id="" class="form-search__item_month">
+            <option value="..."></option>
+            <option value="">сентября</option>
+        </select> <select name="" id="" class="form-search__item_year">
+            <option value="..."></option>
+            <option value="">2009</option>
+        </select>
+        </div>
+        <div class="form-search__item form-search__item_submit">
+            <input type="submit" value="Найти" class="b-btn">
+        </div>
+        <p class="form-search__note">Все поля должны быть заполнены. Полное совпадение обязательно.</p>
+    </form>
+</div>
+
+<div class="container">
+
+    <div class="latest-patients">
+        <h1 style="margin-bottom:16px;">последние пациенты
+            <div style="float:right;"><a href="card.html" class="b-btn">Добавить нового пациента</a></div>
+        </h1>
+        <table class="patients">
+            <tr>
+                <th class="patient__id">ID</th>
+                <th class="patient__fio">ФИО</th>
+                <th class="patient__born">Дата рождения</th>
+                <th class="">Возраст</th>
+                <th class="">Пол</th>
+                <th class="patient__visit">Визит</th>
+                <th class="patient__surveys">Проведённые обследования</th>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio"><a href="card__diary.html">Балабанова Александра Мария Константиновна</a></td>
+                <td class="patient__born">13.10.2009</td>
+                <td class="">4</td>
+                <td class="">жен.</td>
+                <td class="patient__visit">03.04.2013 в 18:32</td>
+                <td class="patient__surveys">
+                    <a href="mapping.html" class="patient__btn patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    <a href="macrophoto.html" class="patient__btn patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="7" class="patients__total">Отображено 15 последних пациентов</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="cr">
+        &copy; <a href="#">Продвинутые медсистемы</a>, 2013 </p>
+</footer>
+
+
+</body>
+</html>

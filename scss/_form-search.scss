@@ -1,0 +1,64 @@
+/* =========================================== */ 
+/* form-search                                 */
+/* =========================================== */
+
+
+
+.form-search-wrapper {
+    background:desaturate(darken(rgba($base-color, 0.1), 20%), 30%);
+    @include border-box-sizing;
+    @include box-shadow(desaturate(lighten(rgba($base-color, .6), 20%), 30%) 0 1px);
+    width:100%;
+}
+
+.form-search {
+    overflow:hidden;
+    padding:$padding 0;
+    margin:0 auto;
+    @include container;
+    //@include susy-grid-background;
+    h3 {
+        line-height:1;
+        margin:0 0 $base-font-size / 2;
+    }
+}
+
+.form-search__label {
+    display:block;
+}
+
+.form-search__text {
+    @include form-search-inp;
+    width:100%;
+}
+
+.form-search__item_last-name,
+.form-search__item_first-name,
+.form-search__item_middle-name {
+    @include span-columns(10, 48);
+}
+
+.form-search__item_born {
+    @include prefix(1);
+    @include span-columns(14, 48);
+    select {
+        @include form-search-inp;
+    }
+}
+
+.form-search__item_submit {
+    padding-top:$base-font-size * 1.4;
+    @include span-columns(4 omega, 48);
+    text-align:right;
+}
+.form-search__note {
+    @include span-columns(48, 48);
+    color:$base-color;
+    font-size:$base-font-size * .8;
+    padding-top: $padding / 4;
+}
+
+
+.form-search__item_day { width:78px; }
+.form-search__item_month { width:130px; }
+.form-search__item_year { width:104px; }

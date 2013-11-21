@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка пациента | Балабанова | визит 12 апреля 2013 в 18:32</title>
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="#"><span class="iconic reload_alt"></span></a></li>
+            <li class="header-menu__item"><a class="active" href="index.html">Картотека</a></li>
+            <li class="header-menu__item"><a href="surveillances.html">Визиты</a></li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div>
+
+</header>
+
+<div class="form-search-wrapper">
+    <form action="" class="form-search">
+        <h3>поиск пациента</h3>
+
+        <div class="form-search__item form-search__item_last-name">
+            <label for="" class="form-search__label">Фамилия</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_first-name">
+            <label for="" class="form-search__label">Имя</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_middle-name">
+            <label for="" class="form-search__label">Отчество</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_born">
+            <label for="" class="form-search__label">Дата рождения</label>
+            <select name="" id="" class="form-search__item_day">
+                <option value="..."></option>
+                <option value="">13</option>
+            </select> <select name="" id="" class="form-search__item_month">
+            <option value="..."></option>
+            <option value="">сентября</option>
+        </select> <select name="" id="" class="form-search__item_year">
+            <option value="..."></option>
+            <option value="">2009</option>
+        </select>
+        </div>
+        <div class="form-search__item form-search__item_submit">
+            <input type="submit" value="Найти" class="b-btn">
+        </div>
+        <p class="form-search__note">Все поля должны быть заполнены. Полное совпадение обязательно.</p>
+    </form>
+</div>
+
+<div class="container">
+
+    <div class="patient-card">
+        <div class="patient-card__title">
+            <a href="index.html" class="nav-back">Картотека</a> / <a href="card__diary.html">Балабанова Александра Мария Константиновна</a>
+            <h1 class="patient-card__name"><em style="font-size:.8em;">визит к</em> <strong>Иванову Д. И.</strong>
+                <em style="font-size:.8em;">12 апреля 2013 в 18:32</em></h1>
+        </div>
+
+        <nav class="patient-card__navigation">
+            <ul>
+                <li><a href="card.html">Общие отметки</a></li>
+                <li><a href="card__signal.html">Сигнальные отметки</a></li>
+                <li><a href="card__diagnosis.html">Лист записи заключительных (уточнённых) диагнозов</a></li>
+                <li><a href="card__diary.html" class="active">Дневник пациента</a></li>
+            </ul>
+        </nav>
+        <div class="patient-card__content">
+            <form action="" class="">
+                <div class="patient-card__content-block">
+                    <h3>Служебные отметки</h3>
+                    <div class="patient-card__content-i2">
+                        <label for="">Дата и время начала приёма</label>
+                        <select name="" id="" class="">
+                            <option value="">13</option>
+                            <option value="..."></option>
+                        </select> <select name="" id="" class="">
+                        <option value="">сентября</option>
+                        <option value="..."></option>
+                    </select> <select name="" id="" class="">
+                        <option value="">2009</option>
+                        <option value="..."></option>
+                    </select>
+                        &nbsp;&nbsp;в
+                        <select name="" id="" class="">
+                            <option value="">10</option>
+                            <option value="..."></option>
+                        </select>
+                        :
+                        <select name="" id="" class="">
+                            <option value="">25</option>
+                            <option value="..."></option>
+                        </select>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <label for="">Место приёма</label>
+                        <select name="" id="" class="">
+                            <option value="">Клиника</option>
+                            <option value="">Дом</option>
+                            <option value="">Работа</option>
+                            <option value="">Личный кабинет</option>
+                            <option value="">На выезде</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Основные жалобы </h3>
+
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">высыпания</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">зуд</label> </li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">жжение</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">боль</label></li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">мокнутие (сочение)</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">чувство напряженности</label> </li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">чувство стянутости кожи</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">онемение</label></li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">«ползание мурашек» (парестезии)</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">сухость (ксероз) кожных покровов</label> </li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">легкая ранимость кожи</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <p class="form-search__note">Вы можете добавить расширенное описание к выбранным жалобам:</p>
+                        <textarea name="" id="" cols="30" rows="10">Зуд: особо силён в пятой точке по утрам;&#10;Лёгкая ранимость кожи: лопается от жара в 300+ градусов Цельсия и не заживает минут 10.&#10;</textarea>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Дополнительные (общие) жалобы</h3>
+
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">недомогание</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">общая слабость</label> </li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">повышенная температура тела</label></li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">озноб</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">бессоница</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">потеря аппетита</label> </li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">головная боль</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">боль в мышцах</label></li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i1">
+                        <p class="form-search__note">Вы можете добавить расширенное описание к выбранным жалобам:</p>
+                        <textarea name="" id="" cols="30" rows="10">Зуд: особо силён в пятой точке по утрам;&#10;Лёгкая ранимость кожи: лопается от жара в 300+ градусов Цельсия и не заживает минут 10.&#10;</textarea>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Время начала заболевания:
+                        <span class="unwrap-context">
+                            <select name="" id="">
+                                <option value="">13</option>
+                                <option value="..."></option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">сентября</option>
+                                <option value="..."></option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">2009</option>
+                                <option value="..."></option>
+                            </select>
+                        </span>
+                    </h3>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Возможная причина заболевания </h3>
+
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">приём лекарств</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">употребление аллергичных продуктов питания и напитков</label> </li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">контакт с раздражающими веществами</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">контакт с зараженным человеком или животным</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">пребывание в эндемических зонах</label></li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">отягощенная наследственность</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">посещение общественных мест (бассейн, баня, сауна)</label> </li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">избыточная инсоляция</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">нервный стресс</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">перенесенное инфекционное заболевание</label></li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">злоупотребление алкоголем</label> </li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">переохлаждение</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">профессиональные вредности</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">другие причины</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">затрудняюсь указать причину заболевания</label></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Характер начала болезни </h3>
+
+                    <div class="patient-card__content-i1">
+                        <input type="radio" checked><label class="radio-label" for="">острое</label>
+                        <input type="radio"><label class="radio-label" for="">постепенное</label>
+
+                        <label for="">Описание</label>
+                        <textarea name="" id="" cols="30" rows="10">Как-то всё странно вышло... Не помню!</textarea>
+
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Динамика развития патологии</h3>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Где появились первые высыпания и как они распространялись по коже, эволюция высыпаний</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3>Получаемое лечение</h3>
+                    <div class="patient-card__content-i1">
+
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Лечение</th>
+                                <th class="patient-card__table__date">Дата начала/Дата окончания</th>
+                                <th class="patient-card__table__note">Примечание</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="va-top">
+                                    <label class="patient-card__note" for="">Препарат:</label>
+                                    <input type="text" class="" value="">
+
+                                    <label class="patient-card__note" for="">Приём:</label>
+                                    <select name="" id="" style="width:100%;">
+                                        <option value="">Стационарное лечение</option>
+                                        <option value="">Амбулаторное лечение</option>
+                                        <option value="">Самолечение (классическое)</option>
+                                        <option value="">Самолечение (нетрадиционное)</option>
+                                    </select>
+                                </td>
+                                <td class="va-top">
+                                    <label class="patient-card__note" for="">Начало лечения:</label>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                    <label class="patient-card__note" for="">Окончание лечения:</label>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="" selected>октября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td class="va-top">
+                                    <label class="patient-card__note" for="">Указывается, в каких учреждениях и у врачей каких специальностей назначалось лечение; доза; эффект:</label>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="va-top">
+                                    <label class="patient-card__note" for="">Препарат:</label>
+                                    <input type="text" class="" value="">
+
+                                    <label class="patient-card__note" for="">Приём:</label>
+                                    <select name="" id="" style="width:100%;">
+                                        <option value="">Стационарное лечение</option>
+                                        <option value="">Амбулаторное лечение</option>
+                                        <option value="">Самолечение (классическое)</option>
+                                        <option value="">Самолечение (нетрадиционное)</option>
+                                    </select>
+                                </td>
+                                <td class="va-top">
+                                    <label class="patient-card__note" for="">Начало лечения:</label>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                    <label class="patient-card__note" for="">Окончание лечения:</label>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="" selected>октября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td class="va-top">
+                                    <label class="patient-card__note" for="">Указывается, в каких учреждениях и у врачей каких специальностей назначалось лечение; доза; эффект:</label>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о получаемом лечении</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3><input type="checkbox"> Обострения (наличие, частота, сезонность, причины)</h3>
+                    <div class="patient-card__content-i1">
+
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Количество обострений <br> в год</th>
+                                <th class="">Сезонность</th>
+                                <th class="">Длительность последнего, недель</th>
+                                <th class="patient-card__table__note">Примечание</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" class="" value="">
+
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <input type="radio"><label class="radio-label" for="">есть</label>
+                                        <input type="radio" checked><label class="radio-label" for="">нет</label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" class="" value="">
+                                </td>
+                                <td class="va-top">
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись об обострении</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Anamnesis vitae (история развития жизни)</h3>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Младенчество. Детство. Юность. Наличие отставания в физическом и умственном развитии:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Учеба. Образование:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Начало трудовой деятельности. Род занятий. Условия труда. Обязательно указать профессиональные вредности при наличии:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Материально-бытовые и санитарно-гигиенические условия:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Питание (регулярность и полноценность, причины и продолжительность, нарушения режима питания):</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Патологическая наследственность (наличие у родственников кожных заболеваний):</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <label for="">Половой и семейный анамнез. Здоровье членов семьи:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <!--show this block according to patient's gender-->
+                    <h3>Военная служба</h3>
+                    <div class="patient-card__content-i3">
+                        <label>Служба в армии</label>
+                        <input type="radio"><label class="radio-label" for="">да</label>
+                        <input type="radio" checked><label class="radio-label" for="">нет</label>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <label>Участие в боевых действиях</label>
+                        <input type="radio"><label class="radio-label" for="">да</label>
+                        <input type="radio" checked><label class="radio-label" for="">нет</label>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <label>Наличие ранений</label>
+                        <input type="radio"><label class="radio-label" for="">да</label>
+                        <input type="radio" checked><label class="radio-label" for="">нет</label>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <!--show this block according to patient's gender-->
+                    <h3>Гинекологический анамнез</h3>
+                    <div class="patient-card__content-i3">
+                        <label for="">Начало и характер менструального цикла</label> <input type="text" class="" value="">
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <label for="">Количество беременностей</label> <input type="text" class="" value="0">
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <label for="">Количество родов</label> <input type="text" class="" value="0">
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3>Перенесённые заболевания</h3>
+                    <div class="patient-card__content-i1">
+
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Диагноз/вид травмы</th>
+                                <th class="patient-card__table__date">Дата диагностирования</th>
+                                <th class="patient-card__table__note">Примечание</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" class="" value="">
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о заболевании</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3>Аллергологический анамнез</h3>
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Препарат/пищевой продукт</th>
+                                <th class="patient-card__table__date">Дата постановки диагноза</th>
+                                <th class="patient-card__table__note">Описание реакции: зудящая сыпь, обморок, бронхоспазм, отек Квинке, другое</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" class="" value="">
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись об аллергической реакции</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3>Гемотрансфузионный анамнез (непереносимость лекарственных средств)</h3>
+
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Препарат</th>
+                                <th class="patient-card__table__date">Дата возникновения реакции</th>
+                                <th class="patient-card__table__note">Описание реакции (состояние, которое возникло в ответ на прием препарата)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о непереносимом препарате</a></p>
+                    </div>
+                </div>
+
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3>Заметки для супервайзера</h3>
+                        <p class="form-search__note">Заполняется оператором или доктором</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h2><a name="00007374-1"></a>Результат обследования по метке №
+                        <a href="images/micro_01.jpg" target="_blank">00007374-1<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </h2>
+
+                    <p class="form-search__note">
+                        от 14 июня 2013 г.<br> Врач-эксперт, к.м.н. Петренко Данил Викторович
+                    </p>
+
+                    <h4>Status praesens (данные объективного обследования)</h4>
+
+                    <p>На коже внутренних поверхностей грудных желез сгруппированная в бляшки белесоватого цвета с морщинистой поверхностью. При пальпации отмечается симптом смещения эпителия и хорошо просматриваемых поверхностных сосудов,впечатление сморщенной бумаги. Данные дерматоскопии: типичной картины склероатрофического лихена, с четкими псевдофолликулярными пробками нет. Склероатрофический лишай находится на ранней стадиии развития и патогномоничные роговые фолликулярные структуры еще не развились.</p>
+
+                    <!-- for operator / doctor / role has rights to read this block -->
+                    <h4>Status localis (местный статус)</h4>
+
+                    <p>На коже внутренних поверхностей грудных желез сгруппированная в бляшки белесоватого цвета с морщинистой поверхностью. При пальпации отмечается симптом смещения эпителия и хорошо просматриваемых поверхностных сосудов,впечатление сморщенной бумаги. Данные дерматоскопии: типичной картины склероатрофического лихена, с четкими псевдофолликулярными пробками нет. Склероатрофический лишай находится на ранней стадиии развития и патогномоничные роговые фолликулярные структуры еще не развились.</p>
+
+                    <h4>Диагноз по МКБ-10</h4>
+
+                    <p>
+                        <em><strong>B01.990: Herpesvirus varicellae infection</strong> (В скобках должен быть диагноз на русском)</em>
+                    </p>
+
+                    <!-- НИЖЕ ИДЁТ Расширенный текстовый диагноз (с сопутствющими диагнозами и осложнениями)-->
+                    <p>На коже внутренних поверхностей грудных желез сгруппированная в бляшки белесоватого цвета с морщинистой поверхностью. При пальпации отмечается симптом смещения эпителия и хорошо просматриваемых поверхностных сосудов,впечатление сморщенной бумаги. Данные дерматоскопии: типичной картины склероатрофического лихена, с четкими псевдофолликулярными пробками нет. Склероатрофический лишай находится на ранней стадиии развития и патогномоничные роговые фолликулярные структуры еще не развились.</p>
+
+                    <h4>Рекомендации (дообследование, лечение)</h4>
+
+                        <ul class="unordered-list_txt">
+                            <li>удаление новообразования кожи хирургическим методом</li>
+                            <li>удаление новообразования кожи радиоволновым методом</li>
+                            <li>проведение патогистологическко исследования удаленного материала</li>
+                        </ul>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <!--show heading according to user role/diary item status-->
+                    <h3>Провести дерматоскопию</h3>
+                    <!--<h3>Проведённое обследование</h3>-->
+                    <div class="patient-card__content-i3">
+                        <a href="macrophoto.html" class="patient__btn patient__btn-2x patient__btn_2" target="_blank">Макроснимки<span class="iconic new_window"></span></a>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <a href="mapping.html" class="patient__btn patient__btn-2x patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                    </div>
+
+                    <div class="patient-card__content-i1">
+                        <p class="form-search__note"><span class="iconic new_window"> &mdash; откроется в новом окне</p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <!--show heading according to user role/diary item status-->
+                    <!--<h3>Начать обследование</h3>-->
+                    <h3>Проведённая дерматоскопия</h3>
+                    <div class="patient-card__content-i3">
+                        <a href="mapping.html" class="patient__btn patient__btn-2x patient__btn_1" target="_blank">Маппинг<span class="iconic new_window"></span></a>
+                    </div>
+                    <div class="patient-card__content-i2 patient-card__content-i2om">
+                        <p>Дерматоскопия завершена <a href="" target="_blank">12 марта 2013 в 15:42<span style="margin-left:2px;" class="iconic new_window"></span></a></p>
+                    </div>
+
+
+                    <div class="patient-card__content-i1">
+                        <p class="form-search__note"><span class="iconic new_window"> &mdash; откроется в новом окне</p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3>Действия</h3>
+
+                    <div class="patient-card__content-col8 actions">
+                        <div class="actions">
+                            <div class="action-item">
+                                <span class="iconic eye action-item__ico"></span>
+                                <a href="#" class="action-item__main-link">Пометить<br>просмотренным</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patient-card__content-col8 actions">
+                        <div class="actions">
+                            <div class="action-item">
+                                <span class="iconic arrow_down_alt1 action-item__ico"></span>
+                                <a href="#" class="action-item__main-link">Скачать<br>PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patient-card__content-col8 actions">
+                        <div class="actions">
+                            <div class="action-item">
+                                <span class="iconic curved_arrow action-item__ico"></span>
+                                <a href="#" class="action-item__main-link">Отправить<br>пациенту</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patient-card__content-col15 patient-card__content-col15om actions" style="background:rgba(255, 30, 30, .3);">
+                        <div class="action-item action-item__realized"></div>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3>Действия</h3>
+
+                    <div class="patient-card__content-col8">
+                        <div class="actions">
+                            <div class="action-item action-item__realized">
+                                <span class="iconic eye action-item action-item__ico"></span>
+                                <a href="#" class="action-item__main-link">Просмотрен</a>
+
+                                <p class="action-item__info"> 14 мая 2013 в 19:33 </p>
+                                <p class="action-item__sec-link-container">
+                                    <a href="#" class="action-item__sec-link">Пометить непросмотренным</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patient-card__content-col8">
+                        <div class="actions">
+                            <div class="action-item action-item__realized">
+                                <span class="iconic arrow_down_alt1 action-item action-item__ico"></span>
+                                <a href="#" class="action-item__main-link">Скачан</a>
+
+                                <p class="action-item__info"> 14 мая 2013 в 19:33 </p>
+                                <p class="action-item__sec-link-container">
+                                    <a href="#" class="action-item__sec-link">Скачать ещё раз</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patient-card__content-col8">
+                        <div class="actions">
+                            <div class="action-item action-item__realized">
+                                <span class="iconic curved_arrow action-item action-item__ico"></span>
+                                <a href="#" class="action-item__main-link">Отправлен пациенту</a>
+
+                                <p class="action-item__info"> 14 мая 2013 в 19:33 </p>
+                                <p class="action-item__sec-link-container">
+                                    <a href="#" class="action-item__sec-link">Отправить повторно</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="patient-card__content-col15 patient-card__content-col15om actions" style="background:rgba(255, 30, 30, .3);">
+                        <div class="action-item action-item__realized"></div>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block action-buttons">
+                    <div class="patient-card__content-i1">
+                        <a href="#" class="b-btn">Сохранить</a>
+                        <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="cr">
+        © <a href="#">Продвинутые медсистемы</a>, 2013 </p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* =========================================== */
+/* surveilances                                */
+/* =========================================== */
+
+.surveillances {
+    padding:$padding 0 0;
+    h1 {
+        text-transform:uppercase;
+    }
+}
+
+.latest-surveillances {
+    @include genericTable;
+    width:100%;
+
+    .surveillances__total {
+        background:adjust_hue(saturate(lighten($base-color, 26), 24), 5);
+        border-top:1px solid saturate(lighten($base-color, 42), 20);
+        border-bottom:1px solid saturate(darken($base-color, 10), 10);
+        color:darken($base-color, 25);
+        font-weight:bold;
+    }
+
+    select {
+        background:saturate(lighten($base-color, 30), 20);
+        border:1px solid saturate(darken($base-color, 10), 10);
+        background-image:linear-gradient(to bottom, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 30), 30));
+        @include box-sizing(border-box);
+        @include box-shadow(
+                whitesmoke 0 1px,
+                saturate(lighten($base-color, 15), 20) 0px 0px 6px 2px inset
+        );
+        color:darken($base-color, 25);
+    }
+
+    .tablecell-checkbox,
+    .patient__visit {
+        padding:0 $padding / 4;
+    }
+
+    td.action {
+        //background:desaturate(darken(rgba($base-color, 0.1), 20%), 30%) !important;
+        text-align:center;
+        padding:0;
+        margin:0;
+
+        .action-item__counter {
+            display:block;
+            margin-left:$padding / 8;
+            margin-right:$padding / 8;
+            padding:$padding / 2 0;
+
+        }
+        &.action__selected {
+            background:darken(rgba($base-color, 0.5), 20%) !important;
+        }
+    }
+    th.action {
+        padding-left:$padding / 4;
+        padding-right:$padding / 4;
+        text-align:left;
+    }
+
+    .action-window {
+        background:darken(rgba($base-color, 0.2), 20%) !important;
+        border-top: 1px solid darken(rgba($base-color, 0.3), 20%) !important;
+        border-bottom: 1px solid darken(rgba($base-color, 0.3), 20%) !important;
+        margin:0 !important;
+        padding:$padding / 4;
+
+        .action-window__content {
+            //background:desaturate(darken(rgba($base-color, 0.1), 10%), 30%) !important;
+            padding:$padding / 4;
+            text-align:center;
+
+            h3 {
+                margin-bottom:$padding /2;
+            }
+            .action-buttons {
+                margin-top:$padding / 2;
+            }
+        }
+    }
+}
+
+.surveillances__email {
+    color:$base-color;
+    line-height:1;
+    font-size:$base-font-size * .8;
+    padding-bottom:$padding / 4;
+    padding-top:$padding / 4;
+    text-align:right;
+
+    a {
+        font-style:italic;
+        color:$base-color;
+    }
+}
+
+.data-filters {
+    //background:rgba(255, 30, 30, .3);
+    margin-bottom:$padding / 2;
+
+    li {
+        display:inline-block;
+        @include border-radius(3px);
+        padding:$padding / 8;
+        margin-left:$padding / 8;
+        margin-right:$padding / 8;
+        font-size:$base-font-size / 1.2;
+        border-top:1px solid transparent;
+        border-bottom:1px solid transparent;
+
+        &:first-child {
+            font-weight:bold;
+            padding-left:0;
+
+            &:hover {
+                background:none;
+                border-top:1px solid transparent;
+                border-bottom:1px solid transparent;
+                font-weight:bold;
+            }
+        }
+
+        &.active {
+            background:desaturate(darken(rgba($base-color, 0.1), 20%), 30%);
+            border-top:1px solid desaturate(lighten($base-color, 42), 20);
+            border-bottom:1px solid desaturate(lighten($base-color, 12), 20);
+            font-weight:bold;
+
+            &.active:hover {
+                background:desaturate(darken(rgba($base-color, 0.1), 90%), 30%);
+                font-weight:bold;
+                cursor:hand;
+            }
+        }
+        &:hover {
+            background:desaturate(darken(rgba($base-color, 0.1), 20%), 30%);
+            border-top:1px solid desaturate(lighten($base-color, 42), 20);
+            border-bottom:1px solid desaturate(lighten($base-color, 12), 20);
+            font-weight:normal;
+        }
+    }
+
+    select {
+        @include form-search-inp;
+        font-size:$base-font-size;
+    }
+}
+
+.tablecell-checkbox {
+    width:$base-font-size * 2;
+}
+
+.action-item__link {
+    text-decoration:none;
+
+    .action-item__counter {
+        background:$base-color;
+        padding:$padding / 16 $padding / 16;
+        margin-right:$padding / 8;
+        @include border-radius(3px);
+        background:saturate(lighten($base-color, 26), 24);
+        @include background-image(linear-gradient(top, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 30), 30)));
+        border-top:1px solid saturate(lighten($base-color, 42), 20);
+        border-bottom:1px solid saturate(lighten($base-color, 12), 20);
+        color:darken($base-color, 25);
+        font-weight:bold;
+        font-size:$base-font-size / 1.2;
+
+        &:hover {
+            background:saturate(lighten($base-color, 16), 24);
+            border-top:1px solid saturate(lighten($base-color, 42), 20);
+            border-bottom:1px solid saturate(lighten($base-color, 12), 20);
+            color:darken($base-color, 25);
+        }
+    }
+
+    &.status-set {
+        .action-item__counter {
+            background:adjust_hue(saturate(lighten($base-color, 16), 14), 60);
+            @include background-image(linear-gradient(top, adjust_hue(saturate(lighten($base-color, 6), 14), 60), adjust_hue(saturate(lighten($base-color, 16), 14), 60)));
+            border-top:1px solid adjust_hue(saturate(lighten($base-color, 47), 20), 80);
+            border-bottom:1px solid adjust_hue(saturate(lighten($base-color, 2), 20), 80);
+            color:adjust_hue(saturate(darken($base-color, 16), 14), 60);
+
+            &:hover {
+                background:adjust_hue(saturate(lighten($base-color, 6), 14), 80);
+                border-top:1px solid adjust_hue(saturate(lighten($base-color, 42), 20), 60);
+                border-bottom:1px solid adjust_hue(saturate(lighten($base-color, 12), 20), 60);
+                color:darken($base-color, 25);
+            }
+
+            &.action-item__counter-canceled {
+                background:adjust_hue(saturate(lighten($base-color, 16), 24), 300);
+                @include background-image(linear-gradient(top, adjust_hue(saturate(lighten($base-color, 6), 24), 300), adjust_hue(saturate(lighten($base-color, 16), 24), 300)));
+                border-top:1px solid adjust_hue(saturate(lighten($base-color, 47), 20), 300);
+                border-bottom:1px solid adjust_hue(saturate(lighten($base-color, 2), 20), 300);
+                color:adjust_hue(saturate(darken($base-color, 16), 24), 300);
+
+                &:hover {
+                    background:adjust_hue(saturate(lighten($base-color, 6), 14), 300);
+                    border-top:1px solid adjust_hue(saturate(lighten($base-color, 42), 20), 300);
+                    border-bottom:1px solid adjust_hue(saturate(lighten($base-color, 12), 20), 300);
+                    color:darken($base-color, 25);
+                }
+            }
+        }
+
+    }
+
+    .action-item__txt {
+        border-bottom:1px dotted;
+    }
+}

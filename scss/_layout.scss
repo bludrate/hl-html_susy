@@ -1,0 +1,12 @@
+/* =========================================== */
+/* Layout                                      */
+/* =========================================== */
+
+@include border-box-sizing;
+
+.container {
+    @include container;
+    min-height:800px;
+    //@include border-box-sizing;
+    //@include susy-grid-background;
+}

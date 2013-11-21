@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Визиты</title>
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="#"><span class="iconic reload_alt"></span></a></li>
+            <li class="header-menu__item"><a href="index.html">Картотека</a></li>
+            <li class="header-menu__item"><a class="active" href="surveillances.html">Визиты</a></li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div></header>
+
+<div class="form-search-wrapper">
+    <form action="" class="form-search">
+        <h3>поиск пациента</h3>
+
+        <div class="form-search__item form-search__item_last-name">
+            <label for="" class="form-search__label">Фамилия</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_first-name">
+            <label for="" class="form-search__label">Имя</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_middle-name">
+            <label for="" class="form-search__label">Отчество</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_born">
+            <label for="" class="form-search__label">Дата рождения</label>
+            <select name="" id="" class="form-search__item_day">
+                <option value="..."></option>
+                <option value="">13</option>
+            </select> <select name="" id="" class="form-search__item_month">
+            <option value="..."></option>
+            <option value="">сентября</option>
+        </select> <select name="" id="" class="form-search__item_year">
+            <option value="..."></option>
+            <option value="">2009</option>
+        </select>
+        </div>
+        <div class="form-search__item form-search__item_submit">
+            <input type="submit" value="Найти" class="b-btn">
+        </div>
+        <p class="form-search__note">Все поля должны быть заполнены. Полное совпадение обязательно.</p>
+    </form>
+</div>
+
+<div class="container">
+
+    <div class="surveillances">
+
+    <h1 style="margin-bottom:16px;">Визиты</h1>
+
+    <!---->
+    <!--Можно выбрать несколько фильтров одновременно. Повторное нажатие на фильтр отменяет его действие. «Все» — сбрасывает фильтры. -->
+    <!---->
+
+    <ul class="data-filters">
+        <li>Показать визиты:</li>
+        <li><a href="#" class="action-item__link"><span class="action-item__txt">Все</span></a></li>
+        <li><a href="#" class="action-item__link"><span class="action-item__counter">1/7</span><span class="action-item__txt">Новые</span></a></li>
+        <li><a href="#" class="action-item__link"><span class="action-item__counter">2/7</span><span class="action-item__txt">В очереди</span></a></li>
+        <li><a href="#" class="action-item__link"><span class="action-item__counter">3/7</span><span class="action-item__txt">В работе</span></a></li>
+        <li class="active"><a href="#" class="action-item__link"><span class="action-item__counter">4/7</span><span class="action-item__txt">Завершённые</span></a></li>
+        <li class="active"><a href="#" class="action-item__link"><span class="action-item__counter">5/7</span><span class="action-item__txt">Не просмотренные</span></a></li>
+        <li><a href="#" class="action-item__link"><span class="action-item__counter">6/7</span><span class="action-item__txt">Не скачанные</span></a></li>
+        <li><a href="#" class="action-item__link"><span class="action-item__counter">7/7</span><span class="action-item__txt">Не отправленные</span></a></li>
+        <li><a href="#" class="action-item__link"><span class="action-item__counter">X</span><span class="action-item__txt">Отмененные</span></a></li>
+    </ul>
+
+        <table class="latest-surveillances">
+            <tr>
+                <th class="tablecell-checkbox"></th>
+                <th class="patient__visit"><a class="pseudo-link" href="#">Визит</a></th>
+                <th class="patient__id"><a class="pseudo-link" href="#">ID</a></th>
+                <th class="patient__fio"><a class="pseudo-link" href="#">ФИО</a></th>
+                <th class="patient__born"><a class="pseudo-link" href="#">Дата рождения</a></th>
+                <th>
+                    <select name="" id="" class="">
+                        <option value="">Все эксперты</option>
+                        <option value="">Иванов И. И.</option>
+                        <option value="">Петров П. П.</option>
+                        <option value="">Джубайтыков Д. Д.</option>
+                    </select>
+                </th>
+                <th class="patient__born"><a class="pseudo-link" href="#">Конечная дата</a></th>
+                <th class=""><a class="pseudo-link" href="#">Приоритет</a></th>
+                <th colspan="8" class="action">
+                    <select name="" id="" class="">
+                        <option value="">Действия с выделенными визитами:</option>
+                        <option value="">[1/7] Присвоить статус: Новый</option>
+                        <option value="">[2/7] Присвоить статус: В очереди у эксперта</option>
+                        <option value="">[3/7] Присвоить статус: В работе у эксперта</option>
+                        <option value="">[4/7] Присвоить статус: Завершён</option>
+                        <option value="">[5/7] Присвоить статус: Просмотрен</option>
+                        <option value="">[6/7] Скачать PDF</option>
+                        <option value="">[7/7] Отправить пациенту</option>
+                        <option value="">[X] Отменить </option>
+                        <option value="">Отправить в архив</option>
+                    </select>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Присвоить визиту статус <strong>В очереди у эксперта</strong>?</h3>
+                        <div class="patient-card__content-block">
+                            <div class="patient-card__content-i3">
+                                <label for="">Назначить эксперта<span class="mandatory">*</span></label>
+
+                                <select name="" id="" class="">
+                                    <option value="">Джубайтыков Иван Иванович</option>
+                                    <option value="..."></option>
+                                </select>
+                            </div>
+                            <div class="patient-card__content-i3">
+                                <label for="">Конечная дата<span class="mandatory">*</span></label>
+
+                                <select name="" id="" class="">
+                                    <option value="">13</option>
+                                    <option value="..."></option>
+                                </select>
+                                <select name="" id="" class="">
+                                    <option value="">сентября</option>
+                                    <option value="..."></option>
+                                </select>
+                                <select name="" id="" class="">
+                                    <option value="">2013</option>
+                                    <option value="..."></option>
+                                </select>
+                            </div>
+                            <div class="patient-card__content-i3 patient-card__content-i3om">
+                                <label for="">Приоритет<span class="mandatory">*</span></label>
+                                <select name="" id="" class="">
+                                    <option value="">Высокий</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Присвоить</a>
+                            <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Присвоить визиту статус <strong>Завершён</strong>?</h3>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Присвоить</a>
+                            <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Присвоить визиту статус <strong>Просмотрен</strong>?</h3>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Присвоить</a>
+                            <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Скачать PDF и присвоить визиту статус <strong>Скачанный</strong>?</h3>
+
+                        <p>
+                            20-10-2013_balabanova-a-k_osmotr.pdf, 13.8 Mb
+                        </p>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Скачать</a>
+                            <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Отправить результаты пациенту и присвоить визиту статус <strong>Отправлен</strong>?</h3>
+
+                        <p><strong>Email:</strong> balabanova@gmail.com</p>
+                        <p>
+                            20-10-2013_balabanova-a-k_osmotr.pdf, 13.8 Mb
+                        </p>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Скачать</a>
+                            <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox" checked></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Иванов И. И.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link" title="[1/7] Присвоить статус: Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[2/7] Присвоить статус: В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[3/7] Присвоить статус: В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[4/7] Присвоить статус: Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[5/7] Присвоить статус: Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[6/7] Скачать PDF"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link" title="[7/7] Отправить пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link" title="[X] Отменить"><span class="action-item__counter">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3><strong>Отменить</strong> задание эксперту</h3>
+                        <div class="patient-card__content-block">
+                            <div class="patient-card__content-i1">
+                                <label for="">Причина отмены<span class="mandatory">*</span></label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Отменить задание</a>
+                            <a href="#" class="b-btn b-btn__secondary">Не отменять</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Визиту присвоен статус <strong>Новый</strong> 29 июня 2013 г. в 18:27</h3>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Визиту присвоен статус <strong>В очереди у эксперта</strong> 29 июня 2013 г. в 18:27</h3>
+
+                        <div class="patient-card__content-block">
+                            <div class="patient-card__content-i3">
+                                <strong>Эксперт:</strong> Джубайтыков Иван Иванович
+                            </div>
+                            <div class="patient-card__content-i3">
+                                <strong>Конечная дата:</strong> 30 июня 2013
+
+                            </div>
+                            <div class="patient-card__content-i3 patient-card__content-i3om">
+                                <strong>Приоритет:</strong> Высокий
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Редактировать</a>
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Визиту присвоен статус <strong>В работе у эксперта</strong> 29 июня 2013 г. в 19:27</h3>
+
+                        <div class="patient-card__content-block">
+                            <div class="patient-card__content-i3">
+                                <strong>Эксперт:</strong> Джубайтыков Иван Иванович
+                            </div>
+                            <div class="patient-card__content-i3">
+                                <strong>Конечная дата:</strong> 30 июня 2013
+
+                            </div>
+                            <div class="patient-card__content-i3 patient-card__content-i3om">
+                                <strong>Приоритет:</strong> Высокий
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Редактировать</a>
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Визиту присвоен статус <strong>Завершён</strong> 30 июня 2013 г. в 20:13</h3>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Отменить присвоение статуса</a>
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Визиту присвоен статус <strong>Просмотрен</strong> 30 июня 2013 г. в 20:33</h3>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Отменить присвоение статуса</a>
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>PDF скачан и визиту присвоен статус <strong>Скачанный</strong> 30 июня 2013 г. в 20:36</h3>
+
+                        <p>
+                            20-10-2013_balabanova-a-k_osmotr.pdf, 13.8 Mb
+                        </p>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Скачать ещё раз</a>
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Результаты отправлены пациенту и визиту присвоен статус <strong>Отправлен</strong> 30 июня 2013 г. в 20:39</h3>
+
+                        <p><strong>Email:</strong> balabanova@gmail.com</p>
+                        <p>
+                            20-10-2013_balabanova-a-k_osmotr.pdf, 13.8 Mb
+                        </p>
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Отправить ещё раз</a>
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tablecell-checkbox"><input type="checkbox"></td>
+                <td class="patient__visit">03.04.2013 <br><span class="unwrap-context">в 18:32</span></td>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card__diary-item.html">Балабанова Александра Мария Константиновна</a>
+                    <p class="surveillances__email">
+                        <a href="macrophoto.html">Задание<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                    </p>
+                </td>
+                <td class="patient__born">13.10.2009</td>
+                <td>Джубайтыков Д. Д.</td>
+                <td class="patient__born">23.10.2013</td>
+                <td class="">Высокий</td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[1/7] Новый"><span class="action-item__counter">1/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[2/7] В очереди у эксперта"><span class="action-item__counter">2/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[3/7] В работе у эксперта"><span class="action-item__counter">3/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[4/7] Завершён"><span class="action-item__counter">4/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[5/7] Просмотрен"><span class="action-item__counter">5/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[6/7] Cкачан"><span class="action-item__counter">6/7</span></a></td>
+                <td class="action"><a href="#" class="action-item__link status-set" title="[7/7] Отправлен пациенту"><span class="action-item__counter">7/7</span></a></td>
+                <td class="action action__selected"><a href="#" class="action-item__link status-set" title="[X] Отменен"><span class="action-item__counter action-item__counter-canceled">X</span></a></td>
+            </tr>
+            <tr>
+                <td colspan="16" class="action-window">
+                    <div class="action-window__content">
+                        <h3>Обработка визита <strong>Отменена</strong> 30 июня 2013 г. в 20:41</h3>
+
+                        <p><strong>Причина отмены:</strong><br>
+                            Подробное описание причины отмены обработки визита
+                        </p>
+
+
+                        <div class="action-buttons">
+                            <a href="#" class="b-btn">Редактировать</a>
+                            <a href="#" class="b-btn b-btn__secondary">Закрыть</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td colspan="16" class="surveillances__total">Отображено 10 последних визитов</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="cr">
+        © <a href="#">Продвинутые медсистемы</a>, 2013 </p>
+</footer>
+
+
+</body>
+</html>

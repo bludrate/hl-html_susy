@@ -1,0 +1,255 @@
+/* =========================================== */
+/* patient-card                                */
+/* =========================================== */
+
+
+.patient-card {
+    padding:$padding 0 0;
+    @include pie-clearfix;
+}
+
+.patient-card__title {
+    padding-bottom:$padding / 2;
+
+    .nav-back {
+        margin-left:-1em;
+        &:before {
+            content:'\2190 \00a0';
+            display:inline-block;
+        }
+    }
+}
+
+.patient-card__navigation {
+    @include span-columns(8, 48);
+    @include suffix(1);
+
+    position:fixed;
+
+    a {
+        display:block;
+        padding:$padding / 2 0 $padding / 2 $padding / 4;
+        font-weight:bold;
+        width:182px;
+
+        &.active {
+            position:relative;
+            text-decoration:none;
+            background:adjust_hue(saturate(lighten($base-color, 26), 24), 5);
+            @include background-image(linear-gradient(bottom, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 30), 30)));
+            border-top:1px solid saturate(lighten($base-color, 42), 20);
+            border-bottom:1px solid saturate(darken($base-color, 10), 10);
+            color:darken($base-color, 25);
+            vertical-align:middle;
+
+            &:after {
+                content:'';
+                position:absolute;
+                top:0;
+                right:-24px;
+                background: url(img/bgNavigation_active.png) right no-repeat;
+                background-size: 24px 100%;
+                width:24px;
+                height:100%;
+            }
+        }
+    }
+}
+
+
+.patient-card__content {
+    @include span-columns(39 omega, 48);
+}
+
+.patient-card__content-block {
+    @include pie-clearfix;
+    clear:both;
+    padding:$padding;
+
+    label { display:block; }
+
+    h6 { color:$body-color; }
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    textarea {
+        @include form-search-inp;
+        width:100%;
+    }
+
+    input[type=checkbox] {
+        float:left;
+        display:block;
+    }
+
+    textarea { height:5em; }
+
+    select { @include form-search-inp; }
+
+    div > textarea {margin-bottom:$padding / 2;}
+
+    h3 {margin-bottom:$padding / 2;}
+
+    .checkbox-label {
+        display:block;
+        padding-left:$base-font-size * 2;
+    }
+    .checkbox-list {
+        li {
+            padding:$base-font-size / 2 0;
+        }
+    }
+    .radio-label {
+        display:inline-block;
+    }
+    .add-info { text-align:right;}
+
+    &.action-buttons {
+        background:none !important;
+        text-align:center;
+    }
+
+    &:nth-child(even) {background:rgba($base-color, .16);}
+    &:nth-child(odd) {background:rgba($base-color, .08);}
+}
+
+.patient-card__content-i1 {
+    //background:rgba(255, 30, 30, .3);
+
+    @include span-columns(39 omega, 39);
+}
+
+.patient-card__content-i1-5 {
+    //background:rgba(30, 255, 30, .3);
+
+    @include span-columns(19, 39);
+
+    &.patient-card__content-i1-5om {
+        @include span-columns(19 omega, 39);
+    }
+}
+
+.patient-card__content-i2 {
+    @include span-columns(26, 39);
+
+    &.patient-card__content-i2om {
+        @include span-columns(26 omega, 39);
+    }
+}
+
+.patient-card__content-i3 {
+    //background:rgba(30, 30, 255, .3);
+
+    @include span-columns(13, 39);
+    &.patient-card__content-i3om {
+        @include span-columns(13 omega, 39);
+    }
+}
+
+
+.patient-card__content-col5 {
+    //background:rgba(30, 255, 30, .3);
+
+    @include span-columns(5, 39);
+
+    select {
+        width:100%;
+    }
+
+    &.patient-card__content-col5om {
+        @include span-columns(5 omega, 39);
+    }
+}
+
+
+.patient-card__content-col8 {
+    //background:rgba(30, 255, 30, .3);
+
+    @include span-columns(8, 39);
+
+    &.patient-card__content-col8om {
+        @include span-columns(8 omega, 39);
+    }
+}
+
+.patient-card__content-col15 {
+    //background:rgba(30, 255, 30, .3);
+
+    @include span-columns(15, 39);
+
+    &.patient-card__content-col15om {
+        @include span-columns(15 omega, 39);
+    }
+}
+
+.patient-card__content-col29 {
+    //background:rgba(30, 255, 30, .3);
+
+    @include span-columns(29, 39);
+
+    &.patient-card__content-col29om {
+        @include span-columns(29 omega, 39);
+    }
+}
+
+.patient-card__table {
+    width:100%;
+    th, td {
+        font-size: $base-font-size * 0.875;
+        @include prefix(1);
+        @include suffix(1);
+    }
+    th {
+        background:adjust_hue(saturate(lighten($base-color, 26), 24), 5);
+        @include background-image(linear-gradient(bottom, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 30), 30)));
+        border-top:1px solid saturate(lighten($base-color, 42), 20);
+        border-bottom:1px solid saturate(darken($base-color, 10), 10);
+        color:darken($base-color, 25);
+        font-weight:bold;
+        text-align:left;
+        line-height:1;
+        padding-top:$base-font-size;
+        padding-bottom:$base-font-size / 1.5;
+        vertical-align:middle;
+    }
+    td {
+        background:adjust_hue(saturate(lighten(rgba($base-color, 0.3), 26), 24), 5);
+        padding-top:$base-font-size / 2;
+        padding-bottom:$base-font-size / 2;
+        vertical-align:middle;
+    }
+    tr:nth-child(odd) td {
+        background:adjust_hue(saturate(lighten(rgba($base-color, 0.3), 16), 14), 5);
+    }
+    &.patient-card__table-2tr tr:nth-child(even) td {
+        border-top:1px solid saturate(lighten($base-color, 42), 20);
+        border-bottom:1px solid saturate(lighten($base-color, 42), 20);
+    }
+    &.patient-card__table-2tr tr:nth-child(odd) td {
+        padding-top:$padding;
+    }
+
+    .patient-card__table__total {
+        background:adjust_hue(saturate(lighten($base-color, 26), 24), 5);
+        border-top:1px solid saturate(lighten($base-color, 42), 20);
+        border-bottom:1px solid saturate(darken($base-color, 10), 10);
+        color:darken($base-color, 25);
+        font-weight:bold;
+    }
+
+    .patient-card__table__note {
+        width:350px;
+    }
+    .patient-card__table__date {
+        width:300px;
+    }
+}
+
+.patient-card__note {
+    color:$base-color;
+    line-height:1;
+    font-size:$base-font-size * .8;
+    padding-bottom:$padding / 4;
+    padding-top:$padding / 4;
+}

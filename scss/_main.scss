@@ -1,0 +1,194 @@
+/* =========================================== */
+/* MAIN.SCSS                                   */
+/* =========================================== */
+
+body {
+    color:$body-color;
+    font-family:$base-font-family;
+    line-height:1.4;
+    background-image:url("img/bgMain.png");
+    background-color:saturate(rgba($base-color, 0.8), 42);
+}
+
+a {
+    color:$link-color;
+    text-decoration:underline;
+
+    &:hover {
+        color:darken($link-color, 20);
+    }
+    &.pseudo-link {
+        text-decoration:none;
+        border-bottom:dotted 1px;
+    }
+}
+
+input, select, textarea {
+    font-family:$base-font-family;
+    font-size:$base-font-size;
+}
+
+input[type=text], textarea {
+    outline:none;
+    padding:3px 0 3px 3px;
+}
+
+input[type=text]:focus, textarea:focus {
+    @include box-shadow(0 0 5px saturate(adjust_hue($base-color, 168), 8));
+    padding:3px 0 3px 3px;
+    border:1px solid saturate(adjust_hue($base-color, 168), 18);
+}
+
+input[type="radio"] {
+    background-color: saturate(lighten($base-color, 20), 40);
+    border-radius: $base-font-size * 2 / 1.5;
+    height: $base-font-size * 2 / 1.5;
+    width: $base-font-size * 2 / 1.5;
+    margin-right: $base-font-size / 2 / 1.5;
+    box-shadow:
+        inset 0 1px 1px hsla(0,0%,100%,.8),
+        0 0 0 1px hsla(0,0%,0%,.6),
+        0 2px 3px hsla(0,0%,0%,.6);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-appearance: none;
+}
+input[type="radio"]:after {
+    background-color:darken($base-color, 30);
+    border-radius: $base-font-size * 4 / 1.5;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+    0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+    height: $base-font-size / 1.5;
+    width: $base-font-size / 1.5;
+    left: $base-font-size / 2 / 1.5;
+    top: $base-font-size / 2 / 1.5;
+    position: relative;
+}
+input[type="radio"]:checked:after {
+    background-color: lighten($link-color, 10);
+    box-shadow:
+        inset 0 0 0 1px hsla(0,0%,0%,.4),
+        inset 0 2px 2px hsla(0,0%,100%,.4),
+        0 1px 1px hsla(0,0%,100%,.8),
+        0 0 2px 2px rgba(lighten($link-color, 10),.4);
+}
+input[type="radio"] + label {
+    vertical-align:top;
+    padding-top:$base-font-size / 4;
+    margin-right:$base-font-size;
+}
+
+
+input[type="checkbox"] {
+    background-color: saturate(lighten($base-color, 20), 40);
+    border-radius: 3px;
+    height: $base-font-size * 1.5;
+    width: $base-font-size * 1.5;
+    margin-right: $base-font-size / 2;
+    box-shadow:
+        inset 0 1px 1px hsla(0,0%,100%,.8),
+        0 0 0 1px hsla(0,0%,0%,.6),
+        0 2px 3px hsla(0,0%,0%,.6);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-appearance: none;
+}
+input[type="checkbox"]:after {
+    background-color: darken($base-color, 30);
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+    0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+    height: $base-font-size;
+    width: $base-font-size;
+    left: $base-font-size / 4;
+    top: $base-font-size / 4;
+    position: relative;
+}
+input[type="checkbox"]:checked:after {
+    background-color: lighten($link-color, 10);
+    box-shadow:
+        inset 0 0 0 1px hsla(0,0%,0%,.4),
+        inset 0 2px 2px hsla(0,0%,100%,.4),
+        0 1px 1px hsla(0,0%,100%,.8),
+        0 0 2px 2px rgba(lighten($link-color, 10),.4);
+}
+input[type="checkbox"] + label {
+    vertical-align:top;
+    padding-top:$base-font-size / 4;
+    margin-right:$base-font-size;
+}
+
+strong, b {
+    font-weight:bold;
+}
+
+em, i { font-style:italic; }
+
+.unwrap-context {
+    white-space:nowrap;
+}
+
+.va-top {
+    vertical-align:top;
+}
+
+.actions {
+    padding-right:$padding / 8;
+
+    .action-item__main-link {
+        display:inline-block;
+        line-height:1;
+    }
+
+    .action-item__ico {
+        font-size:$base-font-size * 1.2;
+        color:darken($base-color, 10);
+        display:inline-block;
+        vertical-align:top;
+        line-height:1;
+    }
+
+    .action-item__main-link,
+    .action-item__sec-link {
+        text-decoration:none;
+        border-bottom:dotted 1px;
+    }
+
+    .action-item__sec-link-container {
+        text-align:right;
+        line-height:1;
+    }
+    .action-item__sec-link {
+        color:darken(saturate($base-color, 40), 20);
+        line-height:1;
+        font-size:$base-font-size * .7;
+    }
+
+    .action-item__realized {
+        .action-item__ico,
+        .action-item__main-link {
+            border-bottom:none;
+            color:darken(saturate(adjust_hue($base-color, 81), 10), 1);
+            font-weight:bold;
+        }
+    }
+    .action-item__info {
+        color:$base-color;
+        font-style:italic;
+    }
+}
+
+.unordered-list_txt {
+    list-style: disc;
+    margin-left:$padding;
+}
+
+.mandatory {
+    color: #f00;
+}

@@ -1,0 +1,115 @@
+/* =========================================== */
+/* buttons                                     */
+/* =========================================== */
+
+/* .b-btn */
+.b-btn {
+    border-width: 1px;
+    border-style: solid;
+    border-color: saturate(lighten($base-color, 42), 20);
+    @include border-radius(3px);
+    display: inline-block;
+
+    color: #fff;
+    cursor:pointer;
+    font-size:$base-font-size * .9;
+    font-weight: 300;
+    text-decoration:none;
+
+    margin:2px;
+    outline: none;
+    padding: 6px 22px;
+    text-shadow: 0 -1px saturate(darken($base-color, 10), 10);
+    @include box-sizing(content-box);
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+
+    background-color: saturate(lighten($base-color, 20), 20);
+    @include background-image(linear-gradient(top, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 10), 30)));
+
+    @include box-shadow(
+        saturate(darken($base-color, 10), 10) 0 0 0 1px,
+        rgba($base-color, 0.25) 0 0 0 3px);
+
+
+    &:hover{
+        color: #fff;
+        background-color: saturate(lighten($base-color, 10), 30);
+        @include background-image(linear-gradient(top, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 10), 60)));
+    }
+    &:active {
+        border-style: solid;
+        border-color: rgba(128, 205, 255, 0);
+        color: rgba(lighten($base-color, 60), 1);
+
+        text-shadow: 0 1px saturate(darken($base-color, 10), 10);
+        background-color:saturate(lighten($base-color, 10), 30);
+
+        @include box-shadow(
+                rgba(saturate(darken($base-color, 10), 10), 0.8) 0 0 0 1px,
+                rgba($base-color, 0.5) 0 0 0 3px);
+    }
+
+
+
+    &.b-btn__secondary {
+        color: #fff;
+        border-color: desaturate(lighten($base-color, 42), 20);
+        text-shadow: 0 -1px desaturate(darken($base-color, 10), 10);
+        background-color: desaturate(lighten($base-color, 20), 20);
+        @include background-image(linear-gradient(top, desaturate(lighten($base-color, 20), 20), desaturate(lighten($base-color, 10), 30)));
+
+        @include box-shadow(
+                desaturate(darken($base-color, 10), 10) 0 0 0 1px,
+                rgba($base-color, 0.25) 0 0 0 3px);
+        
+        &:hover {
+            color: #fff;
+            background-color: desaturate(lighten($base-color, 1), 30);
+            @include background-image(linear-gradient(top, desaturate(lighten($base-color, 10), 20), desaturate(lighten($base-color, 1), 60)));
+        }
+        &:active {
+            border-style: solid;
+            border-color: rgba(128, 205, 255, 0);
+            color: rgba(lighten($base-color, 60), 1);
+
+            text-shadow: 0 1px desaturate(darken($base-color, 10), 10);
+            background-color:desaturate(lighten($base-color, 10), 30);
+
+            @include box-shadow(
+                    rgba(desaturate(darken($base-color, 10), 10), 0.8) 0 0 0 1px,
+                    rgba($base-color, 0.5) 0 0 0 3px);
+        }
+    }
+}
+
+
+/* surveys buttons */
+.patient__btn {
+    border-left:.214em solid;
+    display:inline-block;
+    font-weight:bold;
+    margin-right: $padding / 4;
+    padding: $base-font-size / 4 $padding / 3;
+    text-decoration:none;
+    
+    &.patient__btn-2x {
+        font-size:$base-font-size * 1.3;
+
+        >.iconic {
+            margin-left:$padding / 8;
+        }
+    }
+    .new_window {
+        margin-left:2px;
+    }
+}
+.patient__btn_1 {
+    @include patient__btn_n($patient__btn_1);
+}
+
+.patient__btn_2 {
+    @include patient__btn_n($patient__btn_2);
+}

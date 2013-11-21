@@ -1,0 +1,34 @@
+.login-form {
+    @include span-columns(16, 48);
+    @include squish(16, 16);
+    margin-top:$padding * 4;
+    //background:rgba(255, 30, 30, .3);
+
+    input[type=text],
+    input[type=password] {
+        @include form-search-inp;
+    }
+
+    label {
+        display:block;
+        margin-top:$padding / 2;
+    }
+
+    .login-form__email,
+    .login-form__pass {
+        width:100%;
+    }
+
+    .login-form__cert {
+        width:75%;
+    }
+
+    .action-buttons {
+        text-align:center;
+        padding-top:$padding;
+        .b-btn__login {
+            font-size:$base-font-size * 1.2 !important;
+            width:$padding * 3;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.gallery-item__preview {
+    @include span-columns(16, 48);
+
+    &:last-child {
+        margin-right:0;
+    }
+
+    .image-preview {
+        //float:left;
+        width:100%;
+        padding:$padding / 4;
+        background:saturate(lighten($base-color, 30), 10);
+        border:1px solid saturate(lighten($base-color, 42), 20);
+
+        &:hover {
+            background:saturate(lighten($base-color, 30), 40);
+        }
+    }
+
+    .image-preview__description {
+        margin:$padding / 8 $padding / 4;
+        font-size: 95%;
+
+        li {
+            padding:$padding / 16 0;
+        }
+    }
+}
+
+.macrophoto-nav {
+    .gallery-item__preview {
+        @include span-columns(12, 48);
+
+    }
+    .macrophoto-nav__gap {
+        @include span-columns(23, 48);
+    }
+}

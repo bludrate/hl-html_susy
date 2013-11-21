@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка пациента | Галерея</title>
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="#"><span class="iconic reload_alt"></span></a></li>
+            <li class="header-menu__item"><a class="active" href="index.html">Картотека</a></li>
+            <li class="header-menu__item"><a href="surveillances.html">Визиты</a></li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div>
+
+</header>
+
+<div class="form-search-wrapper">
+    <form action="" class="form-search">
+        <h3>поиск пациента</h3>
+
+        <div class="form-search__item form-search__item_last-name">
+            <label for="" class="form-search__label">Фамилия</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_first-name">
+            <label for="" class="form-search__label">Имя</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_middle-name">
+            <label for="" class="form-search__label">Отчество</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_born">
+            <label for="" class="form-search__label">Дата рождения</label>
+            <select name="" id="" class="form-search__item_day">
+                <option value="..."></option>
+                <option value="">13</option>
+            </select> <select name="" id="" class="form-search__item_month">
+            <option value="..."></option>
+            <option value="">сентября</option>
+        </select> <select name="" id="" class="form-search__item_year">
+            <option value="..."></option>
+            <option value="">2009</option>
+        </select>
+        </div>
+        <div class="form-search__item form-search__item_submit">
+            <input type="submit" value="Найти" class="b-btn">
+        </div>
+        <p class="form-search__note">Все поля должны быть заполнены. Полное совпадение обязательно.</p>
+    </form>
+</div>
+
+<div class="container">
+
+    <div class="patient-card">
+        <div class="patient-card__title">
+            <a href="index.html" class="nav-back">Картотека</a> /
+            <h1 class="patient-card__name">Балабанова Александра Мария Константиновна
+                <div style="float:right;"><a href="card__diary-item.html" class="b-btn">Зарегистрировать новое обращение</a></div>
+            </h1>
+        </div>
+
+        <nav class="patient-card__navigation">
+            <ul>
+                <li><a href="card.html">Общие отметки</a></li>
+                <li><a href="card__signal.html">Сигнальные отметки</a></li>
+                <li><a href="card__diagnosis.html">Лист записи заключительных (уточнённых) диагнозов</a></li>
+                <li><a href="card__diary.html" class="active">Дневник пациента</a></li>
+            </ul>
+        </nav>
+        <div class="patient-card__content">
+
+
+            <form action="" class="">
+
+                <ul class="data-filters">
+                    <li>Показать обращения:</li>
+                    <li><a href="card__diary.html" class="pseudo-link">по визитам</a></li>
+                    <li class="active"><a href="card__diary-gallery.html" class="pseudo-link">по обследованиям</a></li>
+                </ul>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3><a name="00007374-1"></a>23 июня 2013 г.</h3>
+
+                        <div class="gallery-item__preview">
+                            <figure>
+                                <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item" /></a>
+                                <figcaption>
+                                    <ul class="image-preview__description">
+                                        <li>Анатомическая локализация снимка</li>
+                                        <li>Визит к <a href="card__diary-item.html">Иванову И.И. 23.06.2013</a></li>
+                                        <li>Макроснимок №
+                                            <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="gallery-item__preview">
+                            <figure>
+                                <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item" /></a>
+                                <figcaption>
+                                    <ul class="image-preview__description">
+                                        <li>Анатомическая локализация снимка</li>
+                                        <li>Визит к <a href="card__diary-item.html">Иванову И.И. 23.06.2013</a></li>
+                                        <li>Макроснимок №
+                                            <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3><a name="00007374-2"></a>22 июня 2013 г.</h3>
+
+                        <div class="gallery-item__preview">
+                            <figure>
+                                <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item" /></a>
+                                <figcaption>
+                                    <ul class="image-preview__description">
+                                        <li>Анатомическая локализация снимка</li>
+                                        <li>Визит к <a href="card__diary-item.html">Иванову И.И. 22.06.2013</a></li>
+                                        <li>Макроснимок №
+                                            <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3><a name="00007374-3"></a>21 июня 2013 г.</h3>
+
+                        <div class="gallery-item__preview">
+                            <figure>
+                                <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item" /></a>
+                                <figcaption>
+                                    <ul class="image-preview__description">
+                                        <li>Анатомическая локализация снимка</li>
+                                        <li>Визит к <a href="card__diary-item.html">Иванову И.И. 21.06.2013</a></li>
+                                        <li>Макроснимок №
+                                            <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="gallery-item__preview">
+                            <figure>
+                                <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item" /></a>
+                                <figcaption>
+                                    <ul class="image-preview__description">
+                                        <li>Анатомическая локализация снимка</li>
+                                        <li>Визит к <a href="card__diary-item.html">Иванову И.И. 21.06.2013</a></li>
+                                        <li>Макроснимок №
+                                            <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="gallery-item__preview">
+                            <figure>
+                                <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item" /></a>
+                                <figcaption>
+                                    <ul class="image-preview__description">
+                                        <li>Анатомическая локализация снимка</li>
+                                        <li>Визит к <a href="card__diary-item.html">Иванову И.И. 21.06.2013</a></li>
+                                        <li>Макроснимок №
+                                            <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="cr">
+        © <a href="#">Продвинутые медсистемы</a>, 2013 </p>
+</footer>
+
+
+</body>
+</html>

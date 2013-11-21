@@ -1,0 +1,38 @@
+/* =========================================== */ 
+/* latest-patients                             */
+/* =========================================== */
+
+
+.latest-patients {
+    padding:$padding 0 0;
+    h1 {
+        text-transform:uppercase;
+    }
+}
+
+.patients {
+    width:100%;
+    @include genericTable;
+
+    .patient__id { }
+
+    .patient__fio {
+        font-weight:bold;
+    }
+
+    .patient__born {
+        text-align:right;
+    }
+
+    .patient__visit { }
+
+    .patient__surveys { }
+
+    .patients__total {
+        background:adjust_hue(saturate(lighten($base-color, 26), 24), 5);
+        border-top:1px solid saturate(lighten($base-color, 42), 20);
+        border-bottom:1px solid saturate(darken($base-color, 10), 10);
+        color:darken($base-color, 25);
+        font-weight:bold;
+    }
+}

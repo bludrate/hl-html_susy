@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MACRO</title>
+    <link rel="stylesheet" href="css/screen-fluid.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+
+</head>
+<body>
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="card__diary-item.html"><span class="iconic arrow_left"></span></a></li>
+            <li class="header-menu__item surveillances__header-description">
+                <p><strong>Обследование:</strong><br>Макроснимки</p>
+            </li>
+            <li class="header-menu__item surveillances__header-description">
+                <p><strong>Пациент:</strong><br>Балабанова Александра Мария Константиновна</p>
+            </li>
+            <li class="header-menu__item surveillances__header-description">
+                <p><strong>Начало:</strong><br>23.05.2013 в 12:23</p>
+            </li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div>
+</header>
+
+
+<div class="container">
+    <form>
+        <div class="patient-card__content-block">
+            <div class="patient-card__title">
+                <a href="card__diary-gallery.html" class="nav-back">Галерея обследований</a> /
+                <h1 class="patient-card__name">
+                    Макроснимок №00007374
+                    <div style="float:right;"><a href="macrophoto-new.html" class="b-btn">Сделать новый макроснимок</a></div>
+                </h1>
+            </div>
+        </div>
+        <section class="patient-card__content-block">
+            <article class="macrophoto__main-area">
+                <figure>
+                    <div class="image-container">
+                        <img class="macrophoto__main-area-image" src="../hl-html_susy/images/macro.jpg" alt="">
+                    </div>
+                </figure>
+                <form action="#">
+                    <fieldset>
+                        <ul class="pins_overlay">
+                            <!-- <li class="pin pin1"><a href="#">1</a></li> -->
+                        </ul>
+                    </fieldset>
+                </form>
+            </article>
+            <aside class="macrophoto__side-area">
+
+                <a class="macrophoto__side-area__collapse" href="" title="Скрыть панель микроснимков">»</a>
+
+                <ul class="preview-images__list">
+                    <li class="microphoto1">
+                        <a href="microphoto.html" class="preview-image__i-checked" title="Эксперт заполнил все поля по этому микроснимку">
+                            <figure>
+                                <figcaption><span class="iconic check" style="margin-right:2px; font-size:16px;"></span>00007374-1
+                                </figcaption>
+                                <img class="macrophoto__side-area-image" src="images/micro_01.jpg" alt="Микрофото 1">
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="microphoto21">
+                        <a href="microphoto.html">
+                            <figure>
+                                <figcaption>00007374-2</figcaption>
+                                <img class="macrophoto__side-area-image" src="images/micro_01.jpg" alt="Микрофото 1">
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="microphoto3">
+                        <a href="microphoto.html">
+                            <figure>
+                                <figcaption>00007374-3</figcaption>
+                                <img class="macrophoto__side-area-image" src="images/micro_01.jpg" alt="Микрофото 1">
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="microphoto4">
+                        <a href="microphoto.html">
+                            <figure>
+                                <figcaption>00007374-4</figcaption>
+                                <img class="macrophoto__side-area-image" src="images/micro_01.jpg" alt="Микрофото 1">
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="microphoto.html">
+                            <figure>
+                                <figcaption>00007374-4</figcaption>
+                                <img class="macrophoto__side-area-image" src="images/micro_01.jpg" alt="Микрофото 1">
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="microphoto5">
+                        <a href="microphoto.html">
+                            <figure>
+                                <figcaption>00007374-5</figcaption>
+                                <img class="macrophoto__side-area-image" src="images/micro_01.jpg" alt="Микрофото 1">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <footer class="macrophoto__main-area-image-controls">
+                <a href="#" class="add_pin">Добавить метку</a>
+                <a href="#" class="censure">Цензура</a>
+                <a href="#" class="delete_macro">Удалить макроснимок</a>
+            </footer>
+            <div class="macrophoto-description">
+                <label style="margin-top:1.2em;" for="localisation">Локализация снимка</label>
+
+                <select name="localisation" id="localisation" class="">
+                    <option value="">Правая рука</option>
+                </select>
+
+                <select name="" id="" class="">
+                    <option value="">Кисть</option>
+                </select>
+
+                <select name="" id="" class="">
+                    <option value="">Уточнить</option>
+                </select>
+
+                <label style="margin-top:1.2em;" for="zametki">Заметки оператора/доктора:</label>
+                <textarea name="zametki" id="zametki" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="patient-card__content-block action-buttons">
+                <div class="patient-card__content-i1">
+                    <a href="#" class="b-btn">Сохранить</a>
+                    <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                </div>
+            </div>
+        </section>
+        <div class="patient-card__content-block macrophoto-nav">
+
+            <div class="gallery-item__preview">
+                <h3>&larr; <a href="macrophoto.html">Предыдущий макроснимок</a></h3>
+                <figure>
+                    <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item"/></a>
+                    <figcaption>
+                        <ul class="image-preview__description">
+                            <li>Анатомическая локализация снимка</li>
+                            <li>Визит к <a href="card__diary-item.html">Иванову И.И. 21.06.2013</a></li>
+                            <li>Макроснимок №
+                                <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="macrophoto-nav__gap">
+                &nbsp;
+            </div>
+
+            <div class="gallery-item__preview">
+                <h3 style="text-align:right;"><a href="macrophoto.html">Следующий макроснимок</a> &rarr;</h3>
+                <figure>
+                    <a href="macrophoto.html" target="_blank"><img class="image-preview" src="images/macro.jpg" alt="macro-preview-item"/></a>
+                    <figcaption>
+                        <ul class="image-preview__description">
+                            <li>Анатомическая локализация снимка</li>
+                            <li>Визит к <a href="card__diary-item.html">Иванову И.И. 21.06.2013</a></li>
+                            <li>Макроснимок №
+                                <a href="macrophoto.html" target="_blank">00007374<span style="margin-left:2px;" class="iconic new_window"></span></a>
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </form>
+
+</div>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
+
+<!--  <script type="text/javascript" src="js/jquery.scrollto.min.js"></script>-->
+
+<script type="text/javascript" src="js/raphael.js"></script>
+<script type="text/javascript" src="js/editor.js"></script>
+<script type="text/javascript" src="js/shape.js"></script>
+<script type="text/javascript" src="js/tracker.js"></script>
+<script type="text/javascript" src="js/macro.js"></script>
+</body>
+</html>

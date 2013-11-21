@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка пациента</title>
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="#"><span class="iconic reload_alt"></span></a></li>
+            <li class="header-menu__item"><a class="active" href="index.html">Картотека</a></li>
+            <li class="header-menu__item"><a href="surveillances.html">Визиты</a></li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="form-search-wrapper">
+    <form action="" class="form-search">
+        <h3>поиск пациента</h3>
+
+        <div class="form-search__item form-search__item_last-name">
+            <label for="" class="form-search__label">Фамилия</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_first-name">
+            <label for="" class="form-search__label">Имя</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_middle-name">
+            <label for="" class="form-search__label">Отчество</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_born">
+            <label for="" class="form-search__label">Дата рождения</label>
+            <select name="" id="" class="form-search__item_day">
+                <option value="..."></option>
+                <option value="">13</option>
+            </select> <select name="" id="" class="form-search__item_month">
+            <option value="..."></option>
+            <option value="">сентября</option>
+        </select> <select name="" id="" class="form-search__item_year">
+            <option value="..."></option>
+            <option value="">2009</option>
+        </select>
+        </div>
+        <div class="form-search__item form-search__item_submit">
+            <input type="submit" value="Найти" class="b-btn">
+        </div>
+        <p class="form-search__note">Все поля должны быть заполнены. Полное совпадение обязательно.</p>
+    </form>
+</div>
+
+<div class="container">
+
+    <div class="patient-card">
+        <div class="patient-card__title">
+            <a href="index.html" class="nav-back">Картотека</a> /
+            <h1 class="patient-card__name">Балабанова Александра Мария Константиновна</h1>
+        </div>
+
+        <nav class="patient-card__navigation">
+            <ul>
+                <li><a href="card.html" class="active">Общие отметки</a></li>
+                <li><a href="card__signal.html">Сигнальные отметки</a></li>
+                <li><a href="card__diagnosis.html">Лист записи заключительных (уточнённых) диагнозов</a></li>
+                <li><a href="card__diary.html">Дневник пациента</a></li>
+            </ul>
+        </nav>
+        <div class="patient-card__content">
+            <form action="" class="">
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i3">
+                        <label for="">Создал карточку</label> <input type="text" class="" value="Иванов Марьян Петрович">
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <label for="">Дата создания карточки</label>
+                        <select name="" id="" class="">
+                            <option value="">13</option>
+                            <option value="..."></option>
+                        </select> <select name="" id="" class="">
+                            <option value="">сентября</option>
+                            <option value="..."></option>
+                        </select> <select name="" id="" class="">
+                            <option value="">2009</option>
+                            <option value="..."></option>
+                        </select>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <label for="">Код пациента</label> <input type="text" class="" value="32098723">
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i3">
+                        <label for="">Фамилия</label> <input type="text" class="" value="Балабанова">
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <label for="">Имя</label> <input type="text" class="" value="Александра Мария">
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <label for="">Отчество</label> <input type="text" class="" value="Константиновна">
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i3">
+                        <label for="">Дата рождения</label>
+                        <select name="" id="" class="">
+                            <option value="">13</option>
+                            <option value="..."></option>
+                        </select> <select name="" id="" class="">
+                            <option value="">сентября</option>
+                            <option value="..."></option>
+                        </select> <select name="" id="" class="">
+                            <option value="">2009</option>
+                            <option value="..."></option>
+                        </select>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <label>Пол</label>
+                        <input type="radio"><label class="radio-label" for="">муж.</label>
+                        <input type="radio" checked><label class="radio-label" for="">жен.</label>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3>Адрес проживания</h3>
+
+                    <div class="patient-card__content-i3">
+                        <label for="">Страна</label>
+                        <select name="" id="" class="">
+                            <option value="">Украина</option>
+                            <option value="">Республика Беларусь</option>
+                            <option value="">Российская Федерация</option>
+                        </select>
+                        <label for="">Индекс</label>
+                        <input type="text" class="" value="">
+                    </div>
+
+                    <div class="patient-card__content-i3">
+                        <label for="">Тип населённого пункта</label>
+                        <select name="" id="" class="">
+                            <option value="">Город</option>
+                            <option value="">Посёлок городского типа</option>
+                        </select>
+                        <label for="">Населённый пункт</label>
+                        <input type="text" class="" value="">
+                    </div>
+
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <label for="">Улица</label> <input type="text" class="" value="">
+
+                        <div class="patient-card__content-i3">
+                            <label for="">Дом</label> <input type="text" class="" value="">
+                        </div>
+
+                        <div class="patient-card__content-i3">
+                            <label for="">Квартира</label> <input type="text" class="" value="">
+                        </div>
+
+                        <div class="patient-card__content-i3 patient-card__content-i3om">
+                            <label for="">Этаж</label> <input type="text" class="" value="">
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3>Контакты</h3>
+                    <div class="patient-card__content-i3">
+                        <label for="">Телефон</label>
+                        <input type="tel" class="" value="+380 44 2347698">
+                        <p class="add-info"><a href="#" class="pseudo-link">добавить номер</a></p>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <label for="">Email</label>
+                        <input type="email" class="" value="balabanova@gmail.com">
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                    </div>
+
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3>Работа</h3>
+                    <div class="patient-card__content-i1-5">
+                        <label for="">Место работы</label> <input type="text" class="" value="">
+                    </div>
+                    <div class="patient-card__content-i1-5 patient-card__content-i1-5om">
+                        <label for="">Должность</label> <input type="text" class="" value="">
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Контингент </h3>
+
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">инвалиды</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">инвалиды войны</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">участники войны</label> </li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">участники боевых действий</label></li>
+                            <li><input type="checkbox" checked> <label class="checkbox-label" for="">эвакуированные</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">участники ликвидации аварии на ЧАЭС</label></li>
+                        </ul>
+                    </div>
+                    <div class="patient-card__content-i3 patient-card__content-i3om">
+                        <ul class="checkbox-list">
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">проживающие в зоне радиационного контроля</label></li>
+                            <li><input type="checkbox"> <label class="checkbox-label" for="">дети родившиеся от 1-3 категории пострадавших от аварии на ЧАЭС</label></li>
+                            <li>
+                                <input type="checkbox"> <label class="checkbox-label" for="">другие льготные категории</label>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+
+                    <h3>Диспансерная группа</h3>
+
+                    <div class="patient-card__content-i1">
+                        <input type="radio" checked><label class="radio-label" for="">есть</label>
+                        <input type="radio"><label class="radio-label" for="">отсутствует</label>
+
+                        <table class="patient-card__table patient-card__table-2tr">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th colspan="2">Взят на учет</th>
+                                <th colspan="2">Снят с учета</th>
+                            </tr>
+                            </thead>
+
+                            <tr>
+                                <td rowspan="2">1.</td>
+                                <td>Дата установки</td>
+                                <td>
+                                    <select name="" id="" class="">
+                                        <option value="...">12</option>
+                                        <option value="">13</option>
+                                    </select> <select name="" id="" class="">
+                                    <option value="...">сентября</option>
+                                    <option value="">сентября</option>
+                                </select> <select name="" id="" class="">
+                                    <option value="...">2009</option>
+                                    <option value="">2009</option>
+                                </select>
+                                </td>
+                                <td>Дата снятия</td>
+                                <td>
+                                    <select name="" id="" class="">
+                                        <option value="...">23</option>
+                                        <option value="">13</option>
+                                    </select> <select name="" id="" class="">
+                                    <option value="...">декабря</option>
+                                    <option value="">сентября</option>
+                                </select> <select name="" id="" class="">
+                                    <option value="...">2009</option>
+                                    <option value="">2009</option>
+                                </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top;">Причина установки</td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="10">Некоторая нелепая причина</textarea>
+                                </td>
+                                <td style="vertical-align:top;">Причина снятия</td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="10">Отмена нелепой причины</textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="2">2.</td>
+                                <td>Дата установки</td>
+                                <td>
+                                    <select name="" id="" class="">
+                                        <option value="..."></option>
+                                        <option value="">13</option>
+                                    </select> <select name="" id="" class="">
+                                    <option value="..."></option>
+                                    <option value="">сентября</option>
+                                </select> <select name="" id="" class="">
+                                    <option value="..."></option>
+                                    <option value="">2009</option>
+                                </select>
+                                </td>
+                                <td>Дата снятия</td>
+                                <td>
+                                    <select name="" id="" class="">
+                                        <option value="..."></option>
+                                        <option value="">13</option>
+                                    </select> <select name="" id="" class="">
+                                    <option value="..."></option>
+                                    <option value="">сентября</option>
+                                </select> <select name="" id="" class="">
+                                    <option value="..."></option>
+                                    <option value="">2009</option>
+                                </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:top;">Причина установки</td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </td>
+                                <td style="vertical-align:top;">Причина снятия</td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о диспансеризации</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block action-buttons">
+                    <div class="patient-card__content-i1">
+                        <a href="#" class="b-btn">Сохранить</a>
+                        <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="cr">
+        © <a href="#">Продвинутые медсистемы</a>, 2013 </p>
+</footer>
+
+
+</body>
+</html>

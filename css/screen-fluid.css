@@ -1,0 +1,2378 @@
+/* =========================================== */
+/* RESET.SCSS                                  */
+/* =========================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_reset\.scss}line{font-family:\0000311}}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_reset\.scss}line{font-family:\0000319}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_reset\.scss}line{font-family:\0000322}}
+body {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_reset\.scss}line{font-family:\0000325}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_reset\.scss}line{font-family:\0000328}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_reset\.scss}line{font-family:\0000332}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_reset\.scss}line{font-family:\0000336}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =========================================== */
+/* header                                      */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\000034}}
+.header {
+  background: rgba(59, 59, 59, 0.8) url("img/bgHeader.png") repeat-x;
+  background-position: 0 100%;
+  border-bottom: 1px solid #f3f0e8;
+  padding-bottom: 3px;
+  width: 100%;
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000313}}
+.header-menu {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000315}}
+.header-menu li {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000320}}
+.header-menu__item {
+  font-size: 26px;
+  border-left: 1px solid rgba(225, 218, 199, 0.8);
+  padding: 8px 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000325}}
+.header-menu__item a {
+  color: #aa9965;
+  display: inline-block;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000330}}
+.header-menu__item a:hover {
+  color: #dccb99;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000333}}
+.header-menu__item a.active {
+  color: #dccb99;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000337}}
+.header-menu__item.header-menu__item-reload {
+  border-left: 0;
+  padding-top: 8px;
+  padding-bottom: 0;
+  font-size: 40px;
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_header\.scss}line{font-family:\0000346}}
+.header-user-menu {
+  float: right;
+}
+
+/* =========================================== */
+/* MAIN.SCSS                                   */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\000035}}
+body {
+  color: #2b2618;
+  font-family: Calibri, Geneva, Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-image: url("img/bgMain.png");
+  background-color: rgba(188, 149, 32, 0.8);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000313}}
+a {
+  color: #2a5c99;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000317}}
+a:hover {
+  color: #142c49;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000320}}
+a.pseudo-link {
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000326}}
+input, select, textarea {
+  font-family: Calibri, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000331}}
+input[type=text], textarea {
+  outline: none;
+  padding: 3px 0 3px 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000336}}
+input[type=text]:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 5px #456a97;
+  -moz-box-shadow: 0 0 5px #456a97;
+  box-shadow: 0 0 5px #456a97;
+  padding: 3px 0 3px 3px;
+  border: 1px solid #3a69a2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000342}}
+input[type="radio"] {
+  background-color: #e2c160;
+  border-radius: 21.33333px;
+  height: 21.33333px;
+  width: 21.33333px;
+  margin-right: 5.33333px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.6), 0 2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-appearance: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000357}}
+input[type="radio"]:after {
+  background-color: #2b2618;
+  border-radius: 42.66667px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.8);
+  content: '';
+  display: block;
+  height: 10.66667px;
+  width: 10.66667px;
+  left: 5.33333px;
+  top: 5.33333px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000370}}
+input[type="radio"]:checked:after {
+  background-color: #3574c1;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4), inset 0 2px 2px rgba(255, 255, 255, 0.4), 0 1px 1px rgba(255, 255, 255, 0.8), 0 0 2px 2px rgba(53, 116, 193, 0.4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000378}}
+input[type="radio"] + label {
+  vertical-align: top;
+  padding-top: 4px;
+  margin-right: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\0000385}}
+input[type="checkbox"] {
+  background-color: #e2c160;
+  border-radius: 3px;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 0 0 1px rgba(0, 0, 0, 0.6), 0 2px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-appearance: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003100}}
+input[type="checkbox"]:after {
+  background-color: #2b2618;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.8);
+  content: '';
+  display: block;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  top: 4px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003113}}
+input[type="checkbox"]:checked:after {
+  background-color: #3574c1;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4), inset 0 2px 2px rgba(255, 255, 255, 0.4), 0 1px 1px rgba(255, 255, 255, 0.8), 0 0 2px 2px rgba(53, 116, 193, 0.4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003121}}
+input[type="checkbox"] + label {
+  vertical-align: top;
+  padding-top: 4px;
+  margin-right: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003127}}
+strong, b {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003131}}
+em, i {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003133}}
+.unwrap-context {
+  white-space: nowrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003137}}
+.va-top {
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003141}}
+.actions {
+  padding-right: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003144}}
+.actions .action-item__main-link {
+  display: inline-block;
+  line-height: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003149}}
+.actions .action-item__ico {
+  font-size: 19.2px;
+  color: #6d613c;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003158}}
+.actions .action-item__main-link,
+.actions .action-item__sec-link {
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003163}}
+.actions .action-item__sec-link-container {
+  text-align: right;
+  line-height: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003167}}
+.actions .action-item__sec-link {
+  color: #644f12;
+  line-height: 1;
+  font-size: 11.2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003175}}
+.actions .action-item__realized .action-item__ico,
+.actions .action-item__realized .action-item__main-link {
+  border-bottom: none;
+  color: #41954a;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003181}}
+.actions .action-item__info {
+  color: #8e7e4e;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003187}}
+.unordered-list_txt {
+  list-style: disc;
+  margin-left: 32px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_main\.scss}line{font-family:\00003192}}
+.mandatory {
+  color: #f00;
+}
+
+/* =========================================== */
+/* Layout                                      */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/susy-1\.0\.9\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_layout\.scss}line{font-family:\000037}}
+.container {
+  *zoom: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 800px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* =========================================== */
+/* Headings                                    */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_headings\.scss}line{font-family:\0000310}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.form-search__label {
+  color: #664e06;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000339}}
+h1 {
+  font-size: 26px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000339}}
+h2 {
+  font-size: 24px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000339}}
+h3 {
+  font-size: 22px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000339}}
+h4 {
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000339}}
+h5 {
+  font-size: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000339}}
+h6 {
+  font-size: 16px;
+}
+
+/* =========================================== */
+/* buttons                                     */
+/* =========================================== */
+/* .b-btn */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\000036}}
+.b-btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ece2c6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14.4px;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 2px;
+  outline: none;
+  padding: 6px 22px;
+  text-shadow: 0 -1px #766533;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  background-color: #cfb873;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cfb873), color-stop(100%, #ceab41));
+  background-image: -webkit-linear-gradient(top, #cfb873, #ceab41);
+  background-image: -moz-linear-gradient(top, #cfb873, #ceab41);
+  background-image: -o-linear-gradient(top, #cfb873, #ceab41);
+  background-image: linear-gradient(top, #cfb873, #ceab41);
+  -webkit-box-shadow: #766533 0 0 0 1px, rgba(142, 126, 78, 0.25) 0 0 0 3px;
+  -moz-box-shadow: #766533 0 0 0 1px, rgba(142, 126, 78, 0.25) 0 0 0 3px;
+  box-shadow: #766533 0 0 0 1px, rgba(142, 126, 78, 0.25) 0 0 0 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\0000337}}
+.b-btn:hover {
+  color: #fff;
+  background-color: #ceab41;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cfb873), color-stop(100%, #f2bd1d));
+  background-image: -webkit-linear-gradient(top, #cfb873, #f2bd1d);
+  background-image: -moz-linear-gradient(top, #cfb873, #f2bd1d);
+  background-image: -o-linear-gradient(top, #cfb873, #f2bd1d);
+  background-image: linear-gradient(top, #cfb873, #f2bd1d);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\0000342}}
+.b-btn:active {
+  border-style: solid;
+  border-color: rgba(128, 205, 255, 0);
+  color: white;
+  text-shadow: 0 1px #766533;
+  background-color: #ceab41;
+  -webkit-box-shadow: rgba(118, 101, 51, 0.8) 0 0 0 1px, rgba(142, 126, 78, 0.5) 0 0 0 3px;
+  -moz-box-shadow: rgba(118, 101, 51, 0.8) 0 0 0 1px, rgba(142, 126, 78, 0.5) 0 0 0 3px;
+  box-shadow: rgba(118, 101, 51, 0.8) 0 0 0 1px, rgba(142, 126, 78, 0.5) 0 0 0 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\0000357}}
+.b-btn.b-btn__secondary {
+  color: #fff;
+  border-color: #dddbd6;
+  text-shadow: 0 -1px #655d44;
+  background-color: #aaa598;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaa598), color-stop(100%, #888888));
+  background-image: -webkit-linear-gradient(top, #aaa598, #888888);
+  background-image: -moz-linear-gradient(top, #aaa598, #888888);
+  background-image: -o-linear-gradient(top, #aaa598, #888888);
+  background-image: linear-gradient(top, #aaa598, #888888);
+  -webkit-box-shadow: #655d44 0 0 0 1px, rgba(142, 126, 78, 0.25) 0 0 0 3px;
+  -moz-box-shadow: #655d44 0 0 0 1px, rgba(142, 126, 78, 0.25) 0 0 0 3px;
+  box-shadow: #655d44 0 0 0 1px, rgba(142, 126, 78, 0.25) 0 0 0 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\0000368}}
+.b-btn.b-btn__secondary:hover {
+  color: #fff;
+  background-color: #717171;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #928d7d), color-stop(100%, #717171));
+  background-image: -webkit-linear-gradient(top, #928d7d, #717171);
+  background-image: -moz-linear-gradient(top, #928d7d, #717171);
+  background-image: -o-linear-gradient(top, #928d7d, #717171);
+  background-image: linear-gradient(top, #928d7d, #717171);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\0000373}}
+.b-btn.b-btn__secondary:active {
+  border-style: solid;
+  border-color: rgba(128, 205, 255, 0);
+  color: white;
+  text-shadow: 0 1px #655d44;
+  background-color: #888888;
+  -webkit-box-shadow: rgba(101, 93, 68, 0.8) 0 0 0 1px, rgba(142, 126, 78, 0.5) 0 0 0 3px;
+  -moz-box-shadow: rgba(101, 93, 68, 0.8) 0 0 0 1px, rgba(142, 126, 78, 0.5) 0 0 0 3px;
+  box-shadow: rgba(101, 93, 68, 0.8) 0 0 0 1px, rgba(142, 126, 78, 0.5) 0 0 0 3px;
+}
+
+/* surveys buttons */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\0000390}}
+.patient__btn {
+  border-left: .214em solid;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 8px;
+  padding: 4px 10.66667px;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\0000398}}
+.patient__btn.patient__btn-2x {
+  font-size: 20.8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\00003101}}
+.patient__btn.patient__btn-2x > .iconic {
+  margin-left: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\00003105}}
+.patient__btn .new_window {
+  margin-left: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\00003109}}
+.patient__btn_1 {
+  color: #d2f4e4;
+  background: #2bb673;
+  border-color: #18633f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000324}}
+.patient__btn_1:hover {
+  color: #fbfefd;
+  background: #218d59;
+  border-color: #134f32;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_buttons\.scss}line{font-family:\00003113}}
+.patient__btn_2 {
+  color: #ebd3eb;
+  background: #964394;
+  border-color: #4f244e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000324}}
+.patient__btn_2:hover {
+  color: #fbf6fb;
+  background: #733371;
+  border-color: #3e1c3d;
+}
+
+/* =========================================== */
+/* footer                                      */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_footer\.scss}line{font-family:\000034}}
+.footer {
+  background-position: 0 0;
+  background: rgba(59, 59, 59, 0.8) url("img/bgFooter.png") repeat-x;
+  border-top: 1px solid #f3f0e8;
+  margin-top: 64px;
+  width: 100%;
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_footer\.scss}line{font-family:\0000312}}
+.footer .cr {
+  color: #bcaf86;
+  padding: 16px 32px;
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_footer\.scss}line{font-family:\0000316}}
+.footer .cr a {
+  color: #aa9965;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_footer\.scss}line{font-family:\0000319}}
+.footer .cr a:hover {
+  color: #9e8d57;
+}
+
+/* =========================================== */
+/* form-search                                 */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\000037}}
+.form-search-wrapper {
+  background: rgba(59, 59, 59, 0.1);
+  -webkit-box-shadow: rgba(161, 161, 161, 0.6) 0 1px;
+  -moz-box-shadow: rgba(161, 161, 161, 0.6) 0 1px;
+  box-shadow: rgba(161, 161, 161, 0.6) 0 1px;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/susy-1\.0\.9\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
+.form-search-wrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000314}}
+.form-search {
+  overflow: hidden;
+  padding: 32px 0;
+  margin: 0 auto;
+  *zoom: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.form-search:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000320}}
+.form-search h3 {
+  line-height: 1;
+  margin: 0 0 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000326}}
+.form-search__label {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000330}}
+.form-search__text {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+  font-size: 18px;
+  height: 2em;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000337}}
+.form-search__item_last-name,
+.form-search__item_first-name,
+.form-search__item_middle-name {
+  width: 20.32258%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000341}}
+.form-search__item_born {
+  padding-left: 2.09677%;
+  width: 28.70968%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000344}}
+.form-search__item_born select {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+  font-size: 18px;
+  height: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000349}}
+.form-search__item_submit {
+  padding-top: 22.4px;
+  width: 7.74194%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000354}}
+.form-search__note {
+  width: 100%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+  color: #8e7e4e;
+  font-size: 12.8px;
+  padding-top: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000362}}
+.form-search__item_day {
+  width: 78px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000363}}
+.form-search__item_month {
+  width: 130px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_form-search\.scss}line{font-family:\0000364}}
+.form-search__item_year {
+  width: 104px;
+}
+
+/* =========================================== */
+/* latest-patients                             */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_latest-patients\.scss}line{font-family:\000036}}
+.latest-patients {
+  padding: 32px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_latest-patients\.scss}line{font-family:\000038}}
+.latest-patients h1 {
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_latest-patients\.scss}line{font-family:\0000313}}
+.patients {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000350}}
+.patients th, .patients td {
+  font-size: 14px;
+  padding-left: 2.09677%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000354}}
+.patients th {
+  background: #dacc87;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cfb873), color-stop(100%, #e3cf92));
+  background-image: -webkit-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -moz-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -o-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: linear-gradient(bottom, #cfb873, #e3cf92);
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #766533;
+  color: #3c3521;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+  padding-top: 16px;
+  padding-bottom: 10.66667px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000367}}
+.patients td {
+  background: rgba(218, 204, 135, 0.3);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000373}}
+.patients tr:nth-child(odd) td {
+  background: rgba(196, 181, 106, 0.3);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_latest-patients\.scss}line{font-family:\0000319}}
+.patients .patient__fio {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_latest-patients\.scss}line{font-family:\0000323}}
+.patients .patient__born {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_latest-patients\.scss}line{font-family:\0000331}}
+.patients .patients__total {
+  background: #dacc87;
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #766533;
+  color: #3c3521;
+  font-weight: bold;
+}
+
+/* =========================================== */
+/* patient-card                                */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\000036}}
+.patient-card {
+  padding: 32px 0 0;
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.patient-card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000311}}
+.patient-card__title {
+  padding-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000314}}
+.patient-card__title .nav-back {
+  margin-left: -1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000316}}
+.patient-card__title .nav-back:before {
+  content: '\2190 \00a0';
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000323}}
+.patient-card__navigation {
+  width: 16.12903%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+  padding-right: 2.09677%;
+  position: fixed;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000329}}
+.patient-card__navigation a {
+  display: block;
+  padding: 16px 0 16px 8px;
+  font-weight: bold;
+  width: 182px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000335}}
+.patient-card__navigation a.active {
+  position: relative;
+  text-decoration: none;
+  background: #dacc87;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cfb873), color-stop(100%, #e3cf92));
+  background-image: -webkit-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -moz-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -o-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: linear-gradient(bottom, #cfb873, #e3cf92);
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #766533;
+  color: #3c3521;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000345}}
+.patient-card__navigation a.active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -24px;
+  background: url(img/bgNavigation_active.png) right no-repeat;
+  background-size: 24px 100%;
+  width: 24px;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000360}}
+.patient-card__content {
+  width: 81.12903%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000364}}
+.patient-card__content-block {
+  *zoom: 1;
+  clear: both;
+  padding: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.patient-card__content-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000369}}
+.patient-card__content-block label {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000371}}
+.patient-card__content-block h6 {
+  color: #2b2618;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000376}}
+.patient-card__content-block input[type=text],
+.patient-card__content-block input[type=tel],
+.patient-card__content-block input[type=email],
+.patient-card__content-block textarea {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+  font-size: 18px;
+  height: 2em;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000381}}
+.patient-card__content-block input[type=checkbox] {
+  float: left;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000386}}
+.patient-card__content-block textarea {
+  height: 5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000388}}
+.patient-card__content-block select {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+  font-size: 18px;
+  height: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000390}}
+.patient-card__content-block div > textarea {
+  margin-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000392}}
+.patient-card__content-block h3 {
+  margin-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000394}}
+.patient-card__content-block .checkbox-label {
+  display: block;
+  padding-left: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\0000399}}
+.patient-card__content-block .checkbox-list li {
+  padding: 8px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003103}}
+.patient-card__content-block .radio-label {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003106}}
+.patient-card__content-block .add-info {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003108}}
+.patient-card__content-block.action-buttons {
+  background: none !important;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003113}}
+.patient-card__content-block:nth-child(even) {
+  background: rgba(142, 126, 78, 0.16);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003114}}
+.patient-card__content-block:nth-child(odd) {
+  background: rgba(142, 126, 78, 0.08);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003117}}
+.patient-card__content-i1 {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003123}}
+.patient-card__content-i1-5 {
+  width: 48.31014%;
+  float: left;
+  margin-right: 0.79523%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003128}}
+.patient-card__content-i1-5.patient-card__content-i1-5om {
+  width: 48.31014%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003133}}
+.patient-card__content-i2 {
+  width: 66.40159%;
+  float: left;
+  margin-right: 0.79523%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003136}}
+.patient-card__content-i2.patient-card__content-i2om {
+  width: 66.40159%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003141}}
+.patient-card__content-i3 {
+  width: 32.80318%;
+  float: left;
+  margin-right: 0.79523%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003145}}
+.patient-card__content-i3.patient-card__content-i3om {
+  width: 32.80318%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003151}}
+.patient-card__content-col5 {
+  width: 12.12724%;
+  float: left;
+  margin-right: 0.79523%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003156}}
+.patient-card__content-col5 select {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003160}}
+.patient-card__content-col5.patient-card__content-col5om {
+  width: 12.12724%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003166}}
+.patient-card__content-col8 {
+  width: 19.88072%;
+  float: left;
+  margin-right: 0.79523%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003171}}
+.patient-card__content-col8.patient-card__content-col8om {
+  width: 19.88072%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003176}}
+.patient-card__content-col15 {
+  width: 37.97217%;
+  float: left;
+  margin-right: 0.79523%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003181}}
+.patient-card__content-col15.patient-card__content-col15om {
+  width: 37.97217%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003186}}
+.patient-card__content-col29 {
+  width: 74.15507%;
+  float: left;
+  margin-right: 0.79523%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003191}}
+.patient-card__content-col29.patient-card__content-col29om {
+  width: 74.15507%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003196}}
+.patient-card__table {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003198}}
+.patient-card__table th, .patient-card__table td {
+  font-size: 14px;
+  padding-left: 2.09677%;
+  padding-right: 2.09677%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003203}}
+.patient-card__table th {
+  background: #dacc87;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cfb873), color-stop(100%, #e3cf92));
+  background-image: -webkit-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -moz-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -o-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: linear-gradient(bottom, #cfb873, #e3cf92);
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #766533;
+  color: #3c3521;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+  padding-top: 16px;
+  padding-bottom: 10.66667px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003216}}
+.patient-card__table td {
+  background: rgba(218, 204, 135, 0.3);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003222}}
+.patient-card__table tr:nth-child(odd) td {
+  background: rgba(196, 181, 106, 0.3);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003225}}
+.patient-card__table.patient-card__table-2tr tr:nth-child(even) td {
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #ece2c6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003229}}
+.patient-card__table.patient-card__table-2tr tr:nth-child(odd) td {
+  padding-top: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003233}}
+.patient-card__table .patient-card__table__total {
+  background: #dacc87;
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #766533;
+  color: #3c3521;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003241}}
+.patient-card__table .patient-card__table__note {
+  width: 350px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003244}}
+.patient-card__table .patient-card__table__date {
+  width: 300px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_patient-card\.scss}line{font-family:\00003249}}
+.patient-card__note {
+  color: #8e7e4e;
+  line-height: 1;
+  font-size: 12.8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_login-form\.scss}line{font-family:\000031}}
+.login-form {
+  width: 32.90323%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+  margin-left: 33.54839%;
+  margin-right: 33.54839%;
+  margin-top: 128px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_login-form\.scss}line{font-family:\000038}}
+.login-form input[type=text],
+.login-form input[type=password] {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+  font-size: 18px;
+  height: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_login-form\.scss}line{font-family:\0000312}}
+.login-form label {
+  display: block;
+  margin-top: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_login-form\.scss}line{font-family:\0000318}}
+.login-form .login-form__email,
+.login-form .login-form__pass {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_login-form\.scss}line{font-family:\0000322}}
+.login-form .login-form__cert {
+  width: 75%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_login-form\.scss}line{font-family:\0000326}}
+.login-form .action-buttons {
+  text-align: center;
+  padding-top: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_login-form\.scss}line{font-family:\0000329}}
+.login-form .action-buttons .b-btn__login {
+  font-size: 19.2px !important;
+  width: 96px;
+}
+
+/* =========================================== */
+/* surveilances                                */
+/* =========================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\000035}}
+.surveillances {
+  padding: 32px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\000037}}
+.surveillances h1 {
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000312}}
+.latest-surveillances {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000350}}
+.latest-surveillances th, .latest-surveillances td {
+  font-size: 14px;
+  padding-left: 2.09677%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000354}}
+.latest-surveillances th {
+  background: #dacc87;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cfb873), color-stop(100%, #e3cf92));
+  background-image: -webkit-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -moz-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: -o-linear-gradient(bottom, #cfb873, #e3cf92);
+  background-image: linear-gradient(bottom, #cfb873, #e3cf92);
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #766533;
+  color: #3c3521;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+  padding-top: 16px;
+  padding-bottom: 10.66667px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000367}}
+.latest-surveillances td {
+  background: rgba(218, 204, 135, 0.3);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_mixins\.scss}line{font-family:\0000373}}
+.latest-surveillances tr:nth-child(odd) td {
+  background: rgba(196, 181, 106, 0.3);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000316}}
+.latest-surveillances .surveillances__total {
+  background: #dacc87;
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #766533;
+  color: #3c3521;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000324}}
+.latest-surveillances select {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000337}}
+.latest-surveillances .tablecell-checkbox,
+.latest-surveillances .patient__visit {
+  padding: 0 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000341}}
+.latest-surveillances td.action {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000347}}
+.latest-surveillances td.action .action-item__counter {
+  display: block;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 16px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000354}}
+.latest-surveillances td.action.action__selected {
+  background: rgba(76, 68, 42, 0.5) !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000358}}
+.latest-surveillances th.action {
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000364}}
+.latest-surveillances .action-window {
+  background: rgba(76, 68, 42, 0.2) !important;
+  border-top: 1px solid rgba(76, 68, 42, 0.3) !important;
+  border-bottom: 1px solid rgba(76, 68, 42, 0.3) !important;
+  margin: 0 !important;
+  padding: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000371}}
+.latest-surveillances .action-window .action-window__content {
+  padding: 8px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000376}}
+.latest-surveillances .action-window .action-window__content h3 {
+  margin-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000379}}
+.latest-surveillances .action-window .action-window__content .action-buttons {
+  margin-top: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000386}}
+.surveillances__email {
+  color: #8e7e4e;
+  line-height: 1;
+  font-size: 12.8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\0000394}}
+.surveillances__email a {
+  font-style: italic;
+  color: #8e7e4e;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003100}}
+.data-filters {
+  margin-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003104}}
+.data-filters li {
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 13.33333px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003114}}
+.data-filters li:first-child {
+  font-weight: bold;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003118}}
+.data-filters li:first-child:hover {
+  background: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003126}}
+.data-filters li.active {
+  background: rgba(59, 59, 59, 0.1);
+  border-top: 1px solid #dddbd6;
+  border-bottom: 1px solid #979282;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003132}}
+.data-filters li.active.active:hover {
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  cursor: hand;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003138}}
+.data-filters li:hover {
+  background: rgba(59, 59, 59, 0.1);
+  border-top: 1px solid #dddbd6;
+  border-bottom: 1px solid #979282;
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003146}}
+.data-filters select {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+  font-size: 18px;
+  height: 2em;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003152}}
+.tablecell-checkbox {
+  width: 32px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003156}}
+.action-item__link {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003159}}
+.action-item__link .action-item__counter {
+  background: #8e7e4e;
+  padding: 2px 2px;
+  margin-right: 4px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #dac587;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cfb873), color-stop(100%, #e3cf92));
+  background-image: -webkit-linear-gradient(top, #cfb873, #e3cf92);
+  background-image: -moz-linear-gradient(top, #cfb873, #e3cf92);
+  background-image: -o-linear-gradient(top, #cfb873, #e3cf92);
+  background-image: linear-gradient(top, #cfb873, #e3cf92);
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #c5a954;
+  color: #3c3521;
+  font-weight: bold;
+  font-size: 13.33333px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003172}}
+.action-item__link .action-item__counter:hover {
+  background: #ceb25f;
+  border-top: 1px solid #ece2c6;
+  border-bottom: 1px solid #c5a954;
+  color: #3c3521;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003181}}
+.action-item__link.status-set .action-item__counter {
+  background: #80c46a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #62b347), color-stop(100%, #80c46a));
+  background-image: -webkit-linear-gradient(top, #62b347, #80c46a);
+  background-image: -moz-linear-gradient(top, #62b347, #80c46a);
+  background-image: -o-linear-gradient(top, #62b347, #80c46a);
+  background-image: linear-gradient(top, #62b347, #80c46a);
+  border-top: 1px solid #daf2dc;
+  border-bottom: 1px solid #3bac44;
+  color: #366327;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003188}}
+.action-item__link.status-set .action-item__counter:hover {
+  background: #47b350;
+  border-top: 1px solid #d0ecc6;
+  border-bottom: 1px solid #71c554;
+  color: #3c3521;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003195}}
+.action-item__link.status-set .action-item__counter.action-item__counter-canceled {
+  background: #ce5f7b;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c03b5c), color-stop(100%, #ce5f7b));
+  background-image: -webkit-linear-gradient(top, #c03b5c, #ce5f7b);
+  background-image: -moz-linear-gradient(top, #c03b5c, #ce5f7b);
+  background-image: -o-linear-gradient(top, #c03b5c, #ce5f7b);
+  background-image: linear-gradient(top, #c03b5c, #ce5f7b);
+  border-top: 1px solid #f2dae0;
+  border-bottom: 1px solid #ac3b57;
+  color: #6a2033;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003202}}
+.action-item__link.status-set .action-item__counter.action-item__counter-canceled:hover {
+  background: #b34762;
+  border-top: 1px solid #ecc6d0;
+  border-bottom: 1px solid #c55471;
+  color: #3c3521;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_surveillances\.scss}line{font-family:\00003213}}
+.action-item__link .action-item__txt {
+  border-bottom: 1px dotted;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\000031}}
+.surveillances__header-description {
+  color: #dccb99;
+  font-size: 14.4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\000036}}
+.patient-card__content-block {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\000039}}
+.patient-card__content-block .macrophoto__side-area__collapse {
+  position: absolute;
+  top: 96px;
+  right: 0;
+  display: block;
+  width: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: #cec4a7;
+  background: #4c442a;
+  font-size: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000321}}
+.patient-card__content-block .macrophoto__side-area__collapse:hover {
+  color: #f3f0e8;
+  background: #8e7e4e;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000327}}
+.patient-card__content-block.patient-card__content-block_chosen-holder {
+  background: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000330}}
+.macrophoto__main-area {
+  position: relative;
+  width: 66.45161%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000338}}
+.macrophoto__main-area .macrophoto__main-area-image {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000343}}
+.macrophoto__side-area {
+  width: 30.80645%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+  margin-left: 2.09677%;
+  border: 1px solid #8e7e4e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000349}}
+.macrophoto__side-area .macrophoto__side-area-image {
+  width: 100%;
+  border: 1px solid #ece2c6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000354}}
+.macrophoto__side-area .preview-images__list {
+  overflow-y: scroll;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000360}}
+.image-tools {
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.image-tools:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000363}}
+.image-tools .image-tools__item {
+  float: left;
+  margin-right: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000369}}
+.macrophoto-description {
+  width: 100%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+}
+
+/*START HOOKS*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000374}}
+.macrophoto__side-area {
+  overflow-y: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000378}}
+.macrophoto__side-area .preview-images__list {
+  overflow-y: scroll;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000382}}
+.macrophoto__main-area figure {
+  width: 100%;
+  position: relative;
+}
+
+/*END HOOKS*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000389}}
+.preview-images__list {
+  font-size: 13.33333px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\0000392}}
+.preview-images__list a {
+  display: block;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  background: #d5c8a0;
+  border: 1px solid #ece2c6;
+  color: #3c3521;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003102}}
+.preview-images__list a:hover {
+  background: #ead28b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003106}}
+.preview-images__list a figcaption {
+  margin-bottom: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003111}}
+.preview-images__list .preview-image__i-checked {
+  background: rgba(42, 159, 94, 0.2);
+  border: 1px solid rgba(42, 159, 94, 0.3);
+  color: #24854f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003116}}
+.preview-images__list .preview-image__i-checked:hover {
+  background: rgba(42, 159, 94, 0.3);
+  border: 1px solid rgba(42, 159, 94, 0.4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003125}}
+.macrophoto__main-area.macrophoto__main-area__full {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -8px;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003129}}
+.macrophoto__main-area .macrophoto__main-area-image {
+  width: 100%;
+  position: absolute;
+  border: 1px solid #ece2c6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003136}}
+.macrophoto__main-area .pins_overlay {
+  width: 100%;
+  position: absolute;
+  font-size: 10px;
+}
+
+/* .pin23 {
+    top:120px;
+    left:240px;
+}
+
+.pin4 {
+    top:100px;
+    left:540px;
+}
+
+.pin8 {
+    top:40px;
+    left:290px;
+} */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003157}}
+.pin {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 2em;
+  height: 2em;
+  background: #F2EBD9;
+  border: .1em solid #CCB06A;
+  border-radius: 2em;
+  padding: .2em;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003173}}
+.pin > a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #2E231D;
+  font-weight: bold;
+  background: #CCB06A;
+  border-radius: 2em;
+  padding: .05em;
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 1.1em;
+  text-shadow: 0px .1em .1em white;
+  z-index: 99;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003189}}
+.pin:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.4em;
+  height: 1.4em;
+  background: #F2EBD9;
+  -webkit-transform: scale(1, 1) rotate(45deg);
+  top: 1.25em;
+  left: .5em;
+  z-index: 98;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003202}}
+.pin:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.4em;
+  height: 1.4em;
+  background: #CCB06A;
+  -webkit-transform: scale(1, 1) rotate(45deg);
+  top: 1.4em;
+  left: .5em;
+  z-index: 97;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003214}}
+.pin__textarea {
+  background: #dccb99;
+  border: 1px solid #766533;
+  background-image: linear-gradient(to bottom, #cfb873, #e3cf92);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  -moz-box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  box-shadow: whitesmoke 0 1px, #c9ae60 0px 0px 6px 2px inset;
+  color: #3c3521;
+  font-size: 18px;
+  height: 2em;
+  height: 6em;
+  margin: 0 -2% 1em;
+  width: 104%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003220}}
+.criterion-list {
+  overflow: hidden;
+  display: none;
+  margin: 0 0 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003225}}
+.criterion-list_chosen {
+  display: block;
+  width: 70%;
+  margin-top: -0.8em;
+  margin-left: -0.6em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003231}}
+.criterion-list__item {
+  border-top: 1px solid #d5be86;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+  padding: 6px 0;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #585756;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003239}}
+.criterion-list__item:hover {
+  color: #ed3237;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003242}}
+.criterion-list__item:first-child {
+  box-shadow: none;
+  border: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003246}}
+.criterion-list_chosen .criterion-list__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  position: relative;
+  margin: -2px 3.3% 1px 0;
+  box-shadow: none;
+  padding: 0.4em 0 0.4em 2.5em;
+  border-top: 1px solid #beb593;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003255}}
+.criterion-list_chosen .criterion-list__item .criterion-list__visual {
+  margin-right: 3%;
+  width: 37px;
+  height: 30px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003260}}
+.criterion-list_chosen .criterion-list__item .criterion-list__visual img {
+  margin-top: -4px;
+  width: 100%;
+  height: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003266}}
+.criterion-list_chosen .criterion-list__item:first-child {
+  border-top: 1px solid #beb593;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003269}}
+.criterion-list_chosen .criterion-list__item:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: #585756;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003275}}
+.criterion-list__delete {
+  position: absolute;
+  right: 0.6em;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(img/close.png) 50% 50% no-repeat;
+  opacity: 0.8;
+  cursor: pointer;
+  margin-top: -20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003287}}
+.criterion-list__delete:hover {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003291}}
+.criterion-list_chosen .pin {
+  font-size: 0.54em;
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  margin-top: -1.6em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003297}}
+.criterion-list_chosen .pin span {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #2E231D;
+  font-weight: bold;
+  background: #CCB06A;
+  border-radius: 2em;
+  padding: .05em;
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 1.1em;
+  text-shadow: 0px .1em .1em white;
+  z-index: 99;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003313}}
+.criterion-list__item_active {
+  font-weight: bold;
+  color: #ed3237;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003317}}
+.criterion-list__visual {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  margin-right: 1.8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003322}}
+.criterion-list__visual img {
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003326}}
+.criterion-list__text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003331}}
+.criterions-list__tab {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003334}}
+.criterions-list__tab_active {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003337}}
+.criterion-list__column {
+  float: left;
+  width: 48%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003340}}
+.criterion-list__column:first-child {
+  margin-right: 4%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003344}}
+.pin__edit-block {
+  position: absolute;
+  margin: 0 0 0 -16em;
+  top: 4em;
+  left: -9999px;
+  -webkit-transition: top 0.25s, left 0, opacity 0.25s;
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  -moz-transition: top 0.25s, left 0 0.25s, opacity 0.25s;
+  -o-transition: top 0.25s, left 0 0.25s, opacity 0.25s;
+  transition: top 0.25s, left 0 0.25s, opacity 0.25s;
+  width: 33em;
+  background-image: url("img/bgMain.png");
+  background-color: rgba(188, 149, 32, 0.8);
+  padding: 0.5em 1.5em 2em;
+  z-index: 996;
+  border-top: .2em solid #CCB06A;
+  border-radius: 1em;
+  opacity: 0;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.4);
+  z-index: 95;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003361}}
+.pin__edit-block .criterion-list {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003365}}
+.pin__edit-block_criterion {
+  width: 37em;
+  margin-left: -17.4em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003369}}
+.pin__edit-block_criterion {
+  padding-bottom: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003372}}
+.pin_expanded .pin__edit-block {
+  top: 2.5em;
+  opacity: 1;
+  left: 0;
+  -webkit-transition: top 0.25s, opacity 0.25s;
+  -moz-transition: top 0.25s, opacity 0.25s;
+  -o-transition: top 0.25s, opacity 0.25s;
+  transition: top 0.25s, opacity 0.25s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003378}}
+.pin__title {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: bold;
+  color: #664e06;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003385}}
+.pin__input-list {
+  padding: 0.6em 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003387}}
+.pin__input-list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003393}}
+.pin__input-list__item {
+  margin: 0 0 0.9em;
+  line-height: 1.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  color: #44403f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003400}}
+.pin__input-list__item input[type=checkbox] {
+  vertical-align: top;
+  margin: 0 1em 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003405}}
+.pin__controls {
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0;
+  padding: 0 32px;
+  line-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003416}}
+.pin__edit-block_criterion .pin__controls {
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003420}}
+.pin__controls__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  white-space: nowrap;
+  padding: 0 1em 0 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003429}}
+.pin__control {
+  padding: 0 0 0 2em;
+  display: inline-block;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003433}}
+.pin__edit-block_criterion .pin__control {
+  margin-left: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003437}}
+.pin__pagings {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003441}}
+.pin__pagings__elem {
+  display: inline;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003446}}
+.pin__pagings__elem a {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline;
+  color: #4b4b4d;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003453}}
+.pin__pagings__elem a:hover {
+  color: #101011;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003458}}
+.pin__pagings__elem_empty {
+  margin: 0 -4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003461}}
+.pin__pagings__elem_active {
+  font-size: 22px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003464}}
+.pin__pagings__elem_active a:hover {
+  color: #4b4b4d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003469}}
+.pin__pagings-prev,
+.pin__pagings-next {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 34px;
+  background: url(img/arrows.png) no-repeat;
+  cursor: pointer;
+  opacity: 0.9;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-right: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003480}}
+.pin__pagings-prev:hover,
+.pin__pagings-next:hover {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003484}}
+.pin__pagings-next {
+  margin-right: 0;
+  margin-left: 15px;
+  background-position: 100% 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003490}}
+.pin__pagings-prev_disabled,
+.pin__pagings-next_disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003493}}
+.pin__pagings-prev_disabled:hover,
+.pin__pagings-next_disabled:hover {
+  opacity: 0.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003497}}
+.pin__control.macro {
+  background: url(img/macro_add.png) no-repeat 0 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003499}}
+.pin__control.close {
+  background: url(img/close.png) no-repeat 0 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003501}}
+.pin__edit-block .close_disabled {
+  background: url(img/close.png) no-repeat left;
+  color: #142c49;
+  text-decoration: none;
+  cursor: default;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003508}}
+.pin__control.close_yes, .pin__control.close_no {
+  width: 7.5em;
+  float: left;
+  text-align: center;
+  border-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003510}}
+.pin__control.close_yes {
+  color: red;
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003512}}
+.pin__control.close_no {
+  color: #666;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003514}}
+.pin__control.close_yes:hover, .pin__control.close_no:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003516}}
+.pin__control:first-child {
+  border-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003518}}
+.pin__control:last-child {
+  border-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003520}}
+.macrophoto__main-area-image-controls {
+  overflow: hidden;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003525}}
+.macrophoto__main-area-image-controls a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  padding: .5em .7em .5em 1.8em;
+  background-position-x: .5em;
+  border-radius: 0 0 .3em .3em;
+  border: .1em solid transparent;
+  border-top: 0;
+  background: no-repeat .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003537}}
+.macrophoto__main-area-image-controls a:hover {
+  border-color: #ece2c6;
+  background-color: #d5c8a0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003542}}
+.macrophoto__main-area-image-controls .add_pin {
+  background-image: url(img/add_pin.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003545}}
+.macrophoto__main-area-image-controls .censure {
+  background-image: url(img/censure.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003548}}
+.macrophoto__main-area-image-controls .add_ellipse {
+  background-image: url(img/circle.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003551}}
+.macrophoto__main-area-image-controls .add_rectangle {
+  background-image: url(img/rectangle.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003554}}
+.macrophoto__main-area-image-controls .add_polygon {
+  background-image: url(img/polygon.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003557}}
+.macrophoto__main-area-image-controls .add_ruler {
+  background-image: url(img/ruler.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003560}}
+.macrophoto__main-area-image-controls .delete_macro {
+  background-image: url(img/delete_macro.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003563}}
+.macrophoto__main-area-image-controls .censure_save, .macrophoto__main-area-image-controls .censure_dismiss {
+  padding: .7em .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003567}}
+.macrophoto__main-area-image-controls .censure_save {
+  color: green;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003569}}
+.macrophoto__main-area-image-controls .censure_dismiss {
+  color: red;
+}
+
+/*  MICROPHOTO STYLES */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003572}}
+.macrophoto__side-macrophoto {
+  /*border: .1em solid rgba(255,255,255, 0.5);*/
+  /*border-radius: .5em;*/
+  /*background-color:rgba(255,255,255,0.1);*/
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003582}}
+.macrophoto__side-macrophoto {
+  margin-bottom: 16px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003587}}
+.macrophoto__side-macrophoto img {
+  width: 100%;
+  border: 1px solid #ece2c6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003592}}
+.macrophoto__side-macrophoto a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #f3f0e8;
+  background: #aa9965;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003603}}
+.macrophoto__side-macrophoto a:hover {
+  background: #bcaf86;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003607}}
+.macrophoto__side-macrophoto a figcaption {
+  margin-bottom: 4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003612}}
+.input-list {
+  overflow: hidden;
+  margin: 0 0 0.5em;
+  font-size: 14.4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003617}}
+.input-list select,
+.input-list input[type=text] {
+  margin: 0;
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003622}}
+.input-list__item {
+  float: left;
+  margin: 0 0.7em 0.9em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003626}}
+.checkbox-list {
+  font-size: 1em;
+  margin: 0 0 1.2em;
+  line-height: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003630}}
+.checkbox-list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003635}}
+.checkbox-list input[type=checkbox] {
+  vertical-align: top;
+  margin: 0 1em 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003639}}
+.checkbox-list label {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003643}}
+.checkbox-list__column {
+  float: left;
+  margin: 0 2em 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_macrophoto\.scss}line{font-family:\00003648}}
+  .criterion-list__text {
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\000031}}
+.gallery-item__preview {
+  width: 32.90323%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\000034}}
+.gallery-item__preview:last-child {
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\000038}}
+.gallery-item__preview .image-preview {
+  width: 100%;
+  padding: 8px;
+  background: #d5c8a0;
+  border: 1px solid #ece2c6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\0000315}}
+.gallery-item__preview .image-preview:hover {
+  background: #ead28b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\0000320}}
+.gallery-item__preview .image-preview__description {
+  margin: 4px 8px;
+  font-size: 95%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\0000324}}
+.gallery-item__preview .image-preview__description li {
+  padding: 2px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\0000331}}
+.macrophoto-nav .gallery-item__preview {
+  width: 24.51613%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/alex\/hl-html_susy\/trunk\/scss\/_gallery\.scss}line{font-family:\0000335}}
+.macrophoto-nav .macrophoto-nav__gap {
+  width: 47.58065%;
+  float: left;
+  margin-right: 0.64516%;
+  display: inline;
+}

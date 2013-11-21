@@ -1,0 +1,29 @@
+//
+//fonts
+//
+$base-font-family: Calibri, Geneva, Arial, Helvetica, sans-serif;
+$base-font-size: 16px;
+
+
+//
+//color scheme
+//
+
+//$base-color:rgb(86, 111, 179);
+//$base-color:rgb(134, 67, 130);
+$base-color: rgb(142, 126, 78);
+
+$body-color: darken($base-color, 30);
+
+$link-color: saturate(adjust_hue(darken($base-color, 5), 168), 28);
+
+$header-color-link: lighten($base-color, 10);
+
+$patient__btn_1: #2bb673;
+$patient__btn_2: #964394;
+
+
+//
+// dimentions
+$padding: $base-font-size * 2;
+//$fixed-page: 960px;

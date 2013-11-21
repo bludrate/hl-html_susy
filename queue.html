@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Очередь пациентов</title>
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="#"><span class="iconic reload_alt"></span></a></li>
+            <li class="header-menu__item"><a href="index.html">Картотека</a></li>
+            <li class="header-menu__item"><a href="surveillances.html">Визиты</a></li>
+            <li class="header-menu__item"><a class="active" href="queue.html">Очередь пациентов</a></li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div></header>
+
+<div class="form-search-wrapper">
+    <form action="" class="form-search">
+        <h3>поиск пациента</h3>
+
+        <div class="form-search__item form-search__item_last-name">
+            <label for="" class="form-search__label">Фамилия</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_first-name">
+            <label for="" class="form-search__label">Имя</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_middle-name">
+            <label for="" class="form-search__label">Отчество</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_born">
+            <label for="" class="form-search__label">Дата рождения</label>
+            <select name="" id="" class="form-search__item_day">
+                <option value="..."></option>
+                <option value="">13</option>
+            </select> <select name="" id="" class="form-search__item_month">
+            <option value="..."></option>
+            <option value="">сентября</option>
+        </select> <select name="" id="" class="form-search__item_year">
+            <option value="..."></option>
+            <option value="">2009</option>
+        </select>
+        </div>
+        <div class="form-search__item form-search__item_submit">
+            <input type="submit" value="Найти" class="b-btn">
+        </div>
+        <p class="form-search__note">Все поля должны быть заполнены. Полное совпадение обязательно.</p>
+    </form>
+</div>
+
+<div class="container">
+
+    <div class="surveillances">
+
+    <h1 style="margin-bottom:16px;">Очередь пациентов</h1>
+
+    <ul class="data-filters">
+        <li class="active"><a href="#" class="pseudo-link">Новые пациенты</a></li> |
+        <li><a href="#" class="pseudo-link">Архив</a></li>
+    </ul>
+
+        <table class="latest-surveillances">
+            <tr>
+                <th class="patient__id">ID</th>
+                <th class="patient__fio">ФИО</th>
+                <th class="patient__born">Дата рождения [лет]</th>
+                <th>Пол</th>
+                <th>Эксперт</th>
+                <th>Конечная дата</th>
+                <th>Приоритет</th>
+                <th colspan="3">Задание</th>
+            </tr>
+
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card.html">Балабанова Александра Мария Константиновна</a>
+                </td>
+                <td class="patient__born">13.10.2009 [4]</td>
+                <td>жен.</td>
+                <td>Иванов И. И.</td>
+                <td>13.10.2013</td>
+                <td>Высокий</td>
+                        <td><a href="">Просмотреть</a></td>
+                        <td><a class="pseudo-link" href="">Изменить</a></td>
+                        <td><a class="pseudo-link" href="">Отменить</a></td>
+            </tr>
+
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card.html">Балабанова Александра Мария Константиновна</a>
+                </td>
+                <td class="patient__born">13.10.2009 [4]</td>
+                <td>жен.</td>
+                <td>Иванов И. И.</td>
+                <td>13.10.2013</td>
+                <td>Высокий</td>
+                <td><a href="">Просмотреть</a></td>
+                <td><a class="pseudo-link" href="">Изменить</a></td>
+                <td><a class="pseudo-link" href="">Отменить</a></td>
+            </tr>
+
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card.html">Балабанова Александра Мария Константиновна</a>
+                </td>
+                <td class="patient__born">13.10.2009 [4]</td>
+                <td>жен.</td>
+                <td>Иванов И. И.</td>
+                <td>13.10.2013</td>
+                <td>Высокий</td>
+                <td><a href="">Просмотреть</a></td>
+                <td><a class="pseudo-link" href="">Изменить</a></td>
+                <td><a class="pseudo-link" href="">Отменить</a></td>
+            </tr>
+
+            <tr>
+                <td class="patient__id">00007374</td>
+                <td class="patient__fio">
+                    <a href="card.html">Балабанова Александра Мария Константиновна</a>
+                </td>
+                <td class="patient__born">13.10.2009 [4]</td>
+                <td>жен.</td>
+                <td>Иванов И. И.</td>
+                <td>13.10.2013</td>
+                <td>Высокий</td>
+                <td><a href="">Просмотреть</a></td>
+                <td><a class="pseudo-link" href="">Изменить</a></td>
+                <td><a class="pseudo-link" href="">Отменить</a></td>
+            </tr>
+
+            <tr>
+                <td colspan="10" class="surveillances__total">Отображено 10 последних осмотров</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="cr">
+        © <a href="#">Продвинутые медсистемы</a>, 2013 </p>
+</footer>
+
+
+</body>
+</html>

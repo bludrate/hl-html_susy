@@ -1,0 +1,24 @@
+/* =========================================== */
+/* footer                                      */
+/* =========================================== */
+.footer {
+    background-position:0 0;
+    background:desaturate(darken(rgba($base-color, 0.8), 20%), 30%) url('img/bgFooter.png') repeat-x;
+    border-top:1px solid lighten(rgba($base-color, 1), 50);
+    margin-top:$padding * 2;
+    width:100%;
+    @include pie-clearfix;
+
+    .cr {
+        color: rgba(lighten($base-color, 20), 1);
+        padding:$padding / 2 $padding;
+        text-align:left;
+        a {
+            color: rgba(lighten($base-color, 10), 1);
+
+            &:hover {
+                color: rgba(lighten($base-color, 5), 1);
+            }
+        }
+    }
+}

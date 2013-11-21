@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка пациента | Сигнальные отметки</title>
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="stylesheet" href="css/iconic_fill.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="#"><span class="iconic reload_alt"></span></a></li>
+            <li class="header-menu__item"><a class="active" href="index.html">Картотека</a></li>
+            <li class="header-menu__item"><a href="surveillances.html">Визиты</a></li>
+        </ul>
+    </nav>
+    <div class="header-user-menu">
+        <ul>
+            <li class="header-menu__item header-menu__item-reload">
+                <a href="login.html" title="Выйти из системы"><span class="iconic x_alt"></span></a></li>
+        </ul>
+    </div>
+
+</header>
+
+<div class="form-search-wrapper">
+    <form action="" class="form-search">
+        <h3>поиск пациента</h3>
+
+        <div class="form-search__item form-search__item_last-name">
+            <label for="" class="form-search__label">Фамилия</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_first-name">
+            <label for="" class="form-search__label">Имя</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_middle-name">
+            <label for="" class="form-search__label">Отчество</label> <input type="text" class="form-search__text">
+        </div>
+        <div class="form-search__item form-search__item_born">
+            <label for="" class="form-search__label">Дата рождения</label>
+            <select name="" id="" class="form-search__item_day">
+                <option value="..."></option>
+                <option value="">13</option>
+            </select> <select name="" id="" class="form-search__item_month">
+            <option value="..."></option>
+            <option value="">сентября</option>
+        </select> <select name="" id="" class="form-search__item_year">
+            <option value="..."></option>
+            <option value="">2009</option>
+        </select>
+        </div>
+        <div class="form-search__item form-search__item_submit">
+            <input type="submit" value="Найти" class="b-btn">
+        </div>
+        <p class="form-search__note">Все поля должны быть заполнены. Полное совпадение обязательно.</p>
+    </form>
+</div>
+
+<div class="container">
+
+    <div class="patient-card">
+        <div class="patient-card__title">
+            <a href="index.html" class="nav-back">Картотека</a> /
+            <h1 class="patient-card__name">Балабанова Александра Мария Константиновна</h1>
+        </div>
+
+        <nav class="patient-card__navigation">
+            <ul>
+                <li><a href="card.html">Общие отметки</a></li>
+                <li><a href="card__signal.html" class="active">Сигнальные отметки</a></li>
+                <li><a href="card__diagnosis.html">Лист записи заключительных (уточнённых) диагнозов</a></li>
+                <li><a href="card__diary.html">Дневник пациента</a></li>
+            </ul>
+        </nav>
+        <div class="patient-card__content">
+            <form action="" class="">
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-col5">
+                        <label for="">Группа крови</label>
+                        <select name="" id="" class="">
+                            <option value="...">AB(IV)</option>
+                            <option value="">13</option>
+                        </select>
+                    </div>
+                    <div class="patient-card__content-col5">
+                        <label for="">Резус фактор</label>
+                        <select name="" id="" class="">
+                            <option value="...">Rh+</option>
+                            <option value="">13</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i2">
+                        <h3><input type="checkbox" checked>Переливания крови</h3>
+
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th class="patient-card__table__date">Дата переливания</th>
+                                <th>Объём, мл</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <input type="text" class="" value="347">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <input type="text" class="" value="347">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о переливании</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i3">
+                        <h3><input type="checkbox" checked>Сахарный диабет</h3>
+                    </div>
+                    <div class="patient-card__content-i2 patient-card__content-i2om">
+                        <label class="radio-label" for="">диагностирован:</label>
+                        <div class="unwrap-context">
+                            <select name="" id="">
+                                <option value="">13</option>
+                                <option value="..."></option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">сентября</option>
+                                <option value="..."></option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">2009</option>
+                                <option value="..."></option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3><input type="checkbox">Инфекционные заболевания</h3>
+                    <div class="patient-card__content-i1">
+
+                        <table class="patient-card__table">
+                            <thead>
+                                <tr>
+                                    <th>Заболевание</th>
+                                    <th class="patient-card__table__date">Дата диагностирования</th>
+                                    <th class="patient-card__table__note">Примечание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> <label for="">Туберкулёз</label>
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> <label for="">Болезнь Боткина</label>
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> <label for="">Венерические заболевания</label>
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись об ином инфекционном заболевании</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <h3><input type="checkbox" checked> Хирургические вмешательства</h3>
+
+                    <div class="patient-card__content-i1">
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Тип вмешательства</th>
+                                <th class="patient-card__table__date">Дата вмешательства</th>
+                                <th class="patient-card__table__note">Примечание</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" class="" value="Подрезание уздечки языка">
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о хирургическом вмешательстве</a></p>
+                    </div>
+                </div>
+
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3>Аллергические заболевания</h3>
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Тип состояния/заболевания</th>
+                                <th class="patient-card__table__date">Дата постановки диагноза</th>
+                                <th class="patient-card__table__note">Описание реакции (состояние, которое возникло)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> <label for="">аллергическая реакция на распространенные аллергены (пищевые продукты, домашнюю пыль, плесневые грибы, скошенную траву, домашних животных, насекомых)</label>
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> <label for="">пыльца растений</label>
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> <label for="">загрязняющие и раздражающие вещества (дым, смог, пахучие вещества)</label>
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> <label for="">холод, резкое изменение погоды</label>
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о другой аллергической реакции</a></p>
+                    </div>
+                </div>
+                <div class="patient-card__content-block">
+                    <div class="patient-card__content-i1">
+                        <h3>Непереносимость лекарственных средств</h3>
+
+                        <table class="patient-card__table">
+                            <thead>
+                            <tr>
+                                <th>Препарат</th>
+                                <th class="patient-card__table__date">Дата возникновения реакции</th>
+                                <th class="patient-card__table__note">Описание реакции (состояние, которое возникло в ответ на прием препарата)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <div class="unwrap-context">
+                                        <select name="" id="">
+                                            <option value="">13</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">сентября</option>
+                                            <option value="..."></option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">2009</option>
+                                            <option value="..."></option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="add-info"><a href="" class="pseudo-link">добавить запись о непереносимом препарате</a></p>
+                    </div>
+                </div>
+                <div class="patient-card__content-block action-buttons">
+                    <div class="patient-card__content-i1">
+                        <a href="#" class="b-btn">Сохранить</a>
+                        <a href="#" class="b-btn b-btn__secondary">Отменить изменения</a>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="cr">
+        © <a href="#">Продвинутые медсистемы</a>, 2013 </p>
+</footer>
+
+
+</body>
+</html>

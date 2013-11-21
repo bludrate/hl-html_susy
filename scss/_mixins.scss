@@ -1,0 +1,76 @@
+// form input styles
+@mixin form-search-inp {
+    background:saturate(lighten($base-color, 30), 20);
+    border:1px solid saturate(darken($base-color, 10), 10);
+    background-image:linear-gradient(to bottom, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 30), 30));
+    @include box-sizing(border-box);
+    @include box-shadow(
+        whitesmoke 0 1px,
+        saturate(lighten($base-color, 15), 20) 0px 0px 6px 2px inset
+    );
+    //@include box-shadow(whitesmoke 0 1px);
+    color:darken($base-color, 25);
+    font-size:$base-font-size * 1.125; //18px
+    height:2em; //36px
+}
+
+
+// colors for tags
+@mixin patient__btn_n($num) {
+    color:lighten($num, 45);
+    background:$num;
+    border-color:darken($num, 20);
+
+    &:hover {
+        color:lighten($num, 55);
+        background:darken($num, 10);
+        border-color:darken($num, 25);
+    }
+}
+
+// set headings size
+@mixin setHeadingSize($from, $to, $baseSize, $substractBy) {
+    $currentNumber:$from;
+    $currentSize:$baseSize;
+    $to:$to + 1;
+
+    @while $currentNumber != $to {
+    //h1, h2, h3, h4, h5, h6
+        h#{$currentNumber} {
+            font-size:$currentSize;
+        }
+
+        $currentNumber:$currentNumber + 1; // 1, 2, 3, 4, 5, 6
+        $currentSize:$currentSize - $substractBy; // 26, 24, 22, 20, 18, 16
+    }
+}
+
+// table
+@mixin genericTable() {
+    th, td {
+        font-size: $base-font-size * 0.875;
+        @include prefix(1);
+    }
+    th {
+        background:adjust_hue(saturate(lighten($base-color, 26), 24), 5);
+        @include background-image(linear-gradient(bottom, saturate(lighten($base-color, 20), 20), saturate(lighten($base-color, 30), 30)));
+        border-top:1px solid saturate(lighten($base-color, 42), 20);
+        border-bottom:1px solid saturate(darken($base-color, 10), 10);
+        color:darken($base-color, 25);
+        font-weight:bold;
+        text-align:left;
+        line-height:1;
+        padding-top:$base-font-size;
+        padding-bottom:$base-font-size / 1.5;
+        vertical-align:middle;
+    }
+    td {
+        background:adjust_hue(saturate(lighten(rgba($base-color, 0.3), 26), 24), 5);
+        padding-top:$base-font-size / 2;
+        padding-bottom:$base-font-size / 2;
+        vertical-align:middle;
+    }
+    tr:nth-child(odd) td {
+        background:adjust_hue(saturate(lighten(rgba($base-color, 0.3), 16), 14), 5);
+    }
+}
