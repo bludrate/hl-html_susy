@@ -369,6 +369,9 @@
 .pin__edit-block_criterion {
     padding-bottom: 1em;
 }
+.pin_expanded {
+    z-index: 100;
+}
 .pin_expanded .pin__edit-block {
     top: 2.5em;
     opacity: 1;
