@@ -20,21 +20,21 @@ $(function(){
     }
     e.preventDefault();
   });
-  chosenCriterionsBlock.on('click','.criterion-list__item', function (e) {
+  /*chosenCriterionsBlock.on('click','.criterion-list__item', function (e) {
     var elem = $(this);
     elem.data('active-elem').data('active-elem', 0).find('.criterion-list__item').removeClass('criterion-list__item_active');
     elem.remove();
     e.preventDefault();
-  });
+  });*/
   $('.pins_overlay').on('click','.criterion-list__item:not(.criterion-list__item_active)', function(e){
     var $this = $(this),
         list = $this.closest('.criterion-list'),
         activeElem;
     if (!list.data('active-elem')){
-      activeElem = $this.clone().attr('title',"Удалить критерий").append('<span class="pin"><span>'+list.closest('.pin').find('>a').text()+'</span></span>').appendTo(chosenCriterionsBlock).data('active-elem',list);
+      activeElem = $this.clone().append('<span class="pin"><span>'+list.closest('.pin').find('>a').text()+'</span></span>').appendTo(chosenCriterionsBlock).data('active-elem',list);
       list.data('active-elem',activeElem);
     } else {
-      activeElem = $this.clone().attr('title',"Удалить критерий").append('<span class="pin"><span>'+list.closest('.pin').find('>a').text()+'</span></span>').insertAfter(list.data('active-elem')).data('active-elem',list);
+      activeElem = $this.clone().append('<span class="pin"><span>'+list.closest('.pin').find('>a').text()+'</span></span>').insertAfter(list.data('active-elem')).data('active-elem',list);
       list.data('active-elem').remove();
       list.data('active-elem',activeElem);
     }
@@ -45,6 +45,7 @@ $(function(){
   $('body').on('click', '.pin__pagings__elem:not(.pin__pagings__elem_active) a', function(e){
     var $this = $(this),
         index = Number($this.attr('rel')),
+        editBlock = $this.closest('.pin__edit-block'),
         pagings = $this.closest('.pin__pagings').html(pagingsHTML({elemsCount:criterions.size(), active:index}));
     if (index==0){
       pagings.siblings('.pin__pagings-prev').addClass('pin__pagings-prev_disabled');
@@ -56,7 +57,7 @@ $(function(){
     } else {
       pagings.siblings('.pin__pagings-next_disabled').removeClass('pin__pagings-next_disabled');
     }
-    $this.closest('.pin__edit-block').find('.criterions-list__tab').removeClass('criterions-list__tab_active').eq(index).addClass('criterions-list__tab_active');
+    editBlock.find('.criterions-list__tab').removeClass('criterions-list__tab_active').eq(index).addClass('criterions-list__tab_active');
     e.preventDefault();
   });
   $('body').on('click', '.pin__pagings-prev:not(.pin__pagings-prev_disabled)', function(e){

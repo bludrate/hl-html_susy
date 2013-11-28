@@ -1788,32 +1788,32 @@ h6 {
   display: inline-block;
   vertical-align: top;
   width: 30%;
+  cursor: default;
   position: relative;
   margin: -2px 3.3% 1px 0;
   box-shadow: none;
   padding: 0.4em 0 0.4em 2.5em;
   border-top: 1px solid #beb593;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003256}}
 .criterion-list_chosen .criterion-list__item .criterion-list__visual {
   margin-right: 3%;
   width: 37px;
   height: 30px;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003261}}
 .criterion-list_chosen .criterion-list__item .criterion-list__visual img {
   margin-top: -4px;
   width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003267}}
 .criterion-list_chosen .criterion-list__item:first-child {
   border-top: 1px solid #beb593;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003270}}
 .criterion-list_chosen .criterion-list__item:hover {
-  background: rgba(0, 0, 0, 0.04);
   color: #585756;
 }
 
@@ -1882,31 +1882,33 @@ h6 {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003326}}
 .criterion-list__text {
   display: inline-block;
+  max-height: 2.5em;
+  overflow: hidden;
   vertical-align: middle;
   width: 55%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003333}}
 .criterions-list__tab {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003336}}
 .criterions-list__tab_active {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003339}}
 .criterion-list__column {
   float: left;
   width: 48%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003342}}
 .criterion-list__column:first-child {
   margin-right: 4%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003346}}
 .pin__edit-block {
   position: absolute;
   margin: 0 0 0 -16em;
@@ -1929,28 +1931,28 @@ h6 {
   z-index: 95;
   font-size: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003363}}
 .pin__edit-block .criterion-list {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003367}}
 .pin__edit-block_criterion {
   width: 37em;
   margin-left: -17.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003371}}
 .pin__edit-block_criterion {
   padding-bottom: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003374}}
 .pin_expanded {
   z-index: 100;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003377}}
 .pin_expanded .pin__edit-block {
   top: 2.5em;
   opacity: 1;
@@ -1961,7 +1963,7 @@ h6 {
   transition: top 0.25s, opacity 0.25s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003383}}
 .pin__title {
   font-size: 1.5em;
   line-height: 1.6em;
@@ -1970,18 +1972,18 @@ h6 {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003390}}
 .pin__input-list {
   padding: 0.6em 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003392}}
 .pin__input-list:after {
   content: '';
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003398}}
 .pin__input-list__item {
   margin: 0 0 0.9em;
   line-height: 1.5em;
@@ -1992,13 +1994,13 @@ h6 {
   width: 50%;
   color: #44403f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003405}}
 .pin__input-list__item input[type=checkbox] {
   vertical-align: top;
   margin: 0 1em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003410}}
 .pin__controls {
   overflow: hidden;
   -webkit-touch-callout: none;
@@ -2011,12 +2013,12 @@ h6 {
   padding: 0 32px;
   line-height: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003419}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003421}}
 .pin__edit-block_criterion .pin__controls {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003423}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003425}}
 .pin__controls__item {
   display: inline-block;
   vertical-align: middle;
@@ -2027,31 +2029,31 @@ h6 {
   line-height: 16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003434}}
 .pin__control {
   padding: 0 0 0 2em;
   display: inline-block;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003436}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003438}}
 .pin__edit-block_criterion .pin__control {
   margin-left: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003440}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003442}}
 .pin__pagings {
   display: inline-block;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003444}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003446}}
 .pin__pagings__elem {
   display: inline;
   font-size: 16px;
   line-height: 20px;
   margin: 0 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003449}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003451}}
 .pin__pagings__elem a {
   padding: 0;
   margin: 0;
@@ -2060,27 +2062,27 @@ h6 {
   color: #4b4b4d;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003456}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003458}}
 .pin__pagings__elem a:hover {
   color: #101011;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003461}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003463}}
 .pin__pagings__elem_empty {
   margin: 0 -4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003464}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003466}}
 .pin__pagings__elem_active {
   font-size: 22px;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003467}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003469}}
 .pin__pagings__elem_active a:hover {
   color: #4b4b4d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003472}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003474}}
 .pin__pagings-prev,
 .pin__pagings-next {
   display: inline-block;
@@ -2094,42 +2096,42 @@ h6 {
   overflow: hidden;
   margin-right: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003485}}
 .pin__pagings-prev:hover,
 .pin__pagings-next:hover {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003487}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003489}}
 .pin__pagings-next {
   margin-right: 0;
   margin-left: 15px;
   background-position: 100% 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003493}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003495}}
 .pin__pagings-prev_disabled,
 .pin__pagings-next_disabled {
   opacity: 0.3;
   cursor: default;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003496}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003498}}
 .pin__pagings-prev_disabled:hover,
 .pin__pagings-next_disabled:hover {
   opacity: 0.3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003502}}
 .pin__control.macro {
   background: url(img/macro_add.png) no-repeat 0 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003504}}
 .pin__control.close {
   background: url(img/close.png) no-repeat 0 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003504}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003506}}
 .pin__edit-block .close_disabled {
   background: url(img/close.png) no-repeat left;
   color: #142c49;
@@ -2137,7 +2139,7 @@ h6 {
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003511}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003513}}
 .pin__control.close_yes, .pin__control.close_no {
   width: 7.5em;
   float: left;
@@ -2145,40 +2147,40 @@ h6 {
   border-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003513}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003515}}
 .pin__control.close_yes {
   color: red;
   margin-right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003515}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003517}}
 .pin__control.close_no {
   color: #666;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003517}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003519}}
 .pin__control.close_yes:hover, .pin__control.close_no:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003519}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003521}}
 .pin__control:first-child {
   border-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003521}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003523}}
 .pin__control:last-child {
   border-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003525}}
 .macrophoto__main-area-image-controls {
   overflow: hidden;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003528}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003530}}
 .macrophoto__main-area-image-controls a {
   text-decoration: none;
   display: block;
@@ -2191,81 +2193,81 @@ h6 {
   background: no-repeat .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003542}}
 .macrophoto__main-area-image-controls a:hover {
   border-color: #ece2c6;
   background-color: #d5c8a0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003545}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003547}}
 .macrophoto__main-area-image-controls .add_pin {
   background-image: url(img/add_pin.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003548}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003550}}
 .macrophoto__main-area-image-controls .censure {
   background-image: url(img/censure.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003553}}
 .macrophoto__main-area-image-controls .add_ellipse {
   background-image: url(img/circle.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003554}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003556}}
 .macrophoto__main-area-image-controls .add_rectangle {
   background-image: url(img/rectangle.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003559}}
 .macrophoto__main-area-image-controls .add_polygon {
   background-image: url(img/polygon.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003560}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003562}}
 .macrophoto__main-area-image-controls .add_ruler {
   background-image: url(img/ruler.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003563}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003565}}
 .macrophoto__main-area-image-controls .delete_macro {
   background-image: url(img/delete_macro.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003568}}
 .macrophoto__main-area-image-controls .censure_save, .macrophoto__main-area-image-controls .censure_dismiss {
   padding: .7em .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003570}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003572}}
 .macrophoto__main-area-image-controls .censure_save {
   color: green;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003574}}
 .macrophoto__main-area-image-controls .censure_dismiss {
   color: red;
 }
 
 /*  MICROPHOTO STYLES */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003577}}
 .macrophoto__side-macrophoto {
   /*border: .1em solid rgba(255,255,255, 0.5);*/
   /*border-radius: .5em;*/
   /*background-color:rgba(255,255,255,0.1);*/
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003585}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003587}}
 .macrophoto__side-macrophoto {
   margin-bottom: 16px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003590}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003592}}
 .macrophoto__side-macrophoto img {
   width: 100%;
   border: 1px solid #ece2c6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003595}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003597}}
 .macrophoto__side-macrophoto a {
   display: block;
   padding: 8px 16px;
@@ -2273,64 +2275,64 @@ h6 {
   color: #f3f0e8;
   background: #aa9965;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003606}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003608}}
 .macrophoto__side-macrophoto a:hover {
   background: #bcaf86;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003610}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003612}}
 .macrophoto__side-macrophoto a figcaption {
   margin-bottom: 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003615}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003617}}
 .input-list {
   overflow: hidden;
   margin: 0 0 0.5em;
   font-size: 14.4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003620}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003622}}
 .input-list select,
 .input-list input[type=text] {
   margin: 0;
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003625}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003627}}
 .input-list__item {
   float: left;
   margin: 0 0.7em 0.9em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003629}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003631}}
 .checkbox-list {
   font-size: 1em;
   margin: 0 0 1.2em;
   line-height: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003633}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003635}}
 .checkbox-list:after {
   content: '';
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003638}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003640}}
 .checkbox-list input[type=checkbox] {
   vertical-align: top;
   margin: 0 1em 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003642}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003644}}
 .checkbox-list label {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003646}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003648}}
 .checkbox-list__column {
   float: left;
   margin: 0 2em 0 0;
 }
 
 @media screen and (max-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003651}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Work\/hl-html_susy\/scss\/_macrophoto\.scss}line{font-family:\00003653}}
   .criterion-list__text {
     display: none;
   }

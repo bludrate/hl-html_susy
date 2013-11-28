@@ -247,6 +247,7 @@
         display: inline-block;
         vertical-align: top;
         width: 30%;
+        cursor: default;
         position: relative;
         margin: -2px 3.3% 1px 0;
         box-shadow: none;
@@ -267,7 +268,6 @@
             border-top: 1px solid #beb593;
         }
         &:hover {
-        	background: rgba(0,0,0,0.04);
             color: #585756;
         }
     }
@@ -325,6 +325,8 @@
 }
 .criterion-list__text {
     display: inline-block;
+    max-height: 2.5em;
+    overflow: hidden;
     vertical-align: middle;
     width: 55%;
 }
